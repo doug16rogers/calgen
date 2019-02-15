@@ -1,3 +1,6 @@
 *~
 *.o
 *.pyc
+
+# Local detritus:
+tmp*
