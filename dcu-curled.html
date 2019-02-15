@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 9]><html class="eq-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-ie"  lang="en" dir="ltr"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"><!--<![endif]-->
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+  <script>window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  'event': 'dataLayer-loaded',
+  'content': {
+    'nid' : undefined,
+    'player-name': undefined,
+    'author': undefined,
+    'teaser-title': undefined,
+    'related-content': undefined,
+    'page-title': undefined,
+    'visit-time': 'February 15, 2019, 10:59 am',
+  },
+  'taxonomies': {
+    'player-positions': undefined,
+    'series': undefined,
+    'sponsors': undefined,
+    'topics': undefined,
+    'video-channels': undefined
+  }
+});</script>
+<meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<script>self.COMSCORE && COMSCORE.beacon(
+  {c1: "2", c2: "6036539" , cs_ucfr: "1"}
+);</script>
+<link rel="shortcut icon" href="https://dc-mp7static.mlsdigital.net/dc_favicon.gif?Z2Cj3EBpNYCQf_gzLy9t0RPQtc1U5HDb" type="image/gif" />
+<link rel="apple-touch-icon" sizes="144x144" href="/sites/dc/themes/dc/img/apple-touch-icon-144x144-precomposed.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/sites/dc/themes/dc/img/apple-touch-icon-120x120-precomposed.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/sites/dc/themes/dc/img/apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/sites/dc/themes/dc/img/apple-touch-icon-76x76-precomposed.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/sites/dc/themes/dc/img/apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="/sites/dc/themes/dc/img/apple-touch-icon-60x60-precomposed.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/sites/dc/themes/dc/img/apple-touch-icon.png" />
+<script class="kxct" data-id="smbwlmxaw" data-timing="async" data-version="3.0">
+    window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+    (function(){
+      var k=document.createElement('script');k.type='text/javascript';k.async=true;
+      k.src=(location.protocol==='https:'?'https:':'http:')+'//cdn.krxd.net/controltag/smbwlmxaw.js';
+      var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+    }());
+  </script>
+<link rel="apple-touch-icon" sizes="152x152" href="/sites/dc/themes/dc/img/apple-touch-icon-152x152-precomposed.png" />
+<script>var _sf_startpt=(new Date()).getTime();</script>
+<meta property="fb:pages" content="60072341488"/><script src="//cdns.gigya.com/js/gigyaGAIntegration.js"></script>
+<script src="//cdns.gigya.com/js/socialize.js?apiKey=3_hOpR3qNLH4zcbUUJ2aaS2km7_p7UHflrAVGTeZdFLrmZr2pePPQCM1F-HpXUnFAs&amp;lang=en">{lang: "en"}</script>
+<link rel="canonical" href="https://www.dcunited.com/schedule" />
+<meta property="og:site_name" content="D.C. United" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.dcunited.com/schedule" />
+<meta property="og:title" content="Schedule" />
+<meta property="og:image" content="https://www.dcunited.com/sites/all/themes/custom/mp7/images/mls-1200x630.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://www.dcunited.com/schedule" />
+<meta name="twitter:title" content="D.C. United" />
+  <title>Schedule | D.C. United</title>
+  <meta charset="UTF-8">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
+  <link type="text/css" rel="stylesheet" href="https://www.dcunited.com/s3fs-css/css/css_kShW4RPmRstZ3SpIC-ZvVGNFVAi0WEMuCnI0ZkYIaFw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.dcunited.com/s3fs-css/css/css_uzi_HtUUIERSTaDV8LKfhq3bwjNBK7wpGmNeaPB_oMg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.dcunited.com/s3fs-css/css/css__OnpKJYiTrP1BDRjIwdSKQ5cf2gPn_JLFemmR8WIoYU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.dcunited.com/s3fs-css/css/css_H9YHaIqvHZqSKBFdsNdt26aqUeksRiK2NcKZ3OsLQjk.css" media="all" />
+<style>#wrap-hero.clb-pri,.block-views .clb-pri,.node-post .clb-pri,.node-page .clb-pri,.msp_match_container.clb-pri{background:#ffffff;}#wrap-hero.clb-sec,.block-views .clb-sec,.node-post .clb-sec,.node-page .clb-sec,.match_header.clb-sec{background:#333333;}#wrap-hero.clb-pri,#wrap-hero.clb-sec,#wrap-hero.clb-pri .upcoming_match_container .tickets_link a,#wrap-hero.clb-sec .upcoming_match_container .tickets_link a{color:#FFF;}.schedule-bean.clb-pri,.schedule-bean.clb-sec,.region-schedule h2{color:#fff;}.schedule-bean li,.schedule-bean.clb-pri li{background:fcfcfc;}.cbt-pri{color:#ffffff;}.cbt-sec{color:#ffffff;}.cbtbg-pri h2{background:#404041;padding:10px;width:100%;}.cbtbg-sec h2{background:#404041;padding:10px;width:100%;}.clt-pri .image-overlay a,.clt-pri .image-overlay{color:#ffffff;}.clt-sec .image-overlay a,.clt-sec .image-overlay{color:#ffffff;}.cb-pri .image-overlay{background:#404041;background:rgba(64,64,65,0.85);}.cb-sec .image-overlay{background:#404041;background:rgba(64,64,65,0.85);}.sgs_row .post-callout .views-row{background:#404041;}.sgs_row .post-callout .image-overlay a,.sgs_row .post-callout .image-overlay .fa{color:#ffffff;}.schedule-bean.clb-pri,.schedule-bean.clb-sec,#content h2.block-title{color:#404041 !important;}.homepage_callout .callout{background:#404041;}#navigation,.region-navigation .slide-menu,.nav_wrapper{background:#eb0027;}#navigation .region-navigation > li.active-trail:hover,#navigation  .region-navigation .block-menu > .menu > li:hover{background:#404041;}.region-navigation .menu .dropdown li{border-left:1px solid #ffffff;}.region-navigation .dropdown{border:2px solid #ffffff;}.region-navigation .dropdown{background:#000000;}.region-navigation .menu li a:link,.region-navigation .menu li a:visited{color:#ffffff;}.region-navigation .menu li a:hover{color:#cccccc;}#footer-wrapper{background:#000000;}.button{background:#eb0027;}a.button,.stats_button a{color:#ffffff !important;}.button-secondary{background:#000000;}a.button-secondary,.stats_button-secondary a{color:#ffffff !important;}.title_container.player .title_overlay .title,.schedule_list a,.node-type-multi-section-page a,.node-type-multi-section-page a:hover,.node-type-multi-section-page a:active,.node-type-multi-section-page a:visited,.node-page a,.node-page a:hover,.node-page a:active,.node-page a:visited,.node-external-link .node-title a,.node-external-link .node-title a:hover,.node-external-link .node-title a:active,.node-external-link .node-title a:visited,.node-post a,.node-post .field-name-field-post-body a,.node-post .field-name-field-post-body a:hover,.node-post .field-name-field-post-body a:active,.node-post .field-name-field-post-body a:visited,.posts-bean a,.posts-bean a:hover,.posts-bean a:active,.posts-bean a:visited,#page-callouts .homepage_callout .callout .callout_link,.page-stats .ct_wrapper a,.schedule-bean-schedule_page .match_footer .location_link_wrapper .text_link_container > a,.schedule-bean-last_featured .match_footer .location_link_wrapper .text_link_container > a,.schedule-bean-next_three_row .match_footer .location_link_wrapper .text_link_container > a,.schedule-bean-next_three_rail .match_footer .location_link_wrapper .text_link_container > a,.schedule-bean-prev_up_list_row .match_footer .location_link_wrapper .text_link_container > a,.schedule-bean-schedule_page .match_footer .location_link_wrapper .text_link_container,.schedule-bean-last_featured .match_footer .location_link_wrapper .text_link_container,.schedule-bean-next_three_row .match_footer .location_link_wrapper .text_link_container,.schedule-bean-next_three_rail .match_footer .location_link_wrapper .text_link_container,.schedule-bean-prev_up_list_row .match_footer .location_link_wrapper .text_link_container,.block-bean .block-title > a{color:#eb0027;}.page-schedule .schedule_list .match_item .match_home{border-color:#eb0027 transparent transparent;}.page-schedule .schedule_list .match_item .match_away{border-color:#000000 transparent transparent;}.page-schedule .schedule_list .match_item .match_parallelogram{background:#eb0027;}.sgs_row .block-dfp .dfp-tag-wrapper{background:#ffffff;}.page-stats .stats_all_blocks .stats_block .stats_table .card div.info + div.stat-value{color:#eb0027;}.page-stats .stats_all_blocks .stats_block .stats_table .card div.chart .bar{background:#eb0027;}.match_item.clb-sec{border:2px solid #000000;}.match_footer.clb-sec{border-top:2px solid #000000;}.match_header.clb-sec{background-color:#000000;color:#ffffff;}.section-navigation404 .content .block-search-api-page .form-submit{background:#eb0027;}.section-404 .content .block-search-api-page .form-submit{background:#eb0027;}
+      body {
+        background: #ffffff url(https://dc-mp7static.mlsdigital.net/images/DCU_2018-WR-WebsiteBackground-EvergreenVersion_2600x1200.jpg) no-repeat scroll center top;
+      }
+      #main {
+        background-color: #fcfcfc;
+      }
+      #main:before,
+      #main:after {
+          content: " "; /* 1 */
+          display: table; /* 2 */
+      }
+      #main:after {
+        clear: both;
+      }
+      .front #content {
+        background-color: #fcfcfc;
+      }</style>
+      <script src="https://www.dcunited.com/s3fs-js/js/js__5ZDbAHXizN0D-Wk2VKxwjQ7OlV6SPlfRVRjhUhxfaA.js"></script>
+<script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.slots = googletag.slots || {};</script>
+<script src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script src="https://www.dcunited.com/s3fs-js/js/js_s3L_uC35AiN5EGYY533su-jccnLRp2aKpOnjgPLbo34.js"></script>
+<script>var mapping = googletag.sizeMapping()
+  .addSize([0, 0], [320, 50])
+  .addSize([740, 200], [728, 90])
+  .build();
+googletag.slots["leaderboard"] = googletag.defineSlot("/8375/www.dcunited.com/schedule", [728, 90], "dfp-ad-leaderboard")
+  .addService(googletag.pubads())
+  .setTargeting("position", "leaderboard")
+  .defineSizeMapping(mapping);</script>
+<script>googletag.slots["entitlement"] = googletag.defineSlot("/8375/www.dcunited.com/schedule", [250, 145], "dfp-ad-entitlement")
+  .addService(googletag.pubads())
+  .setTargeting("position", "entitlement");</script>
+<script>googletag.slots["title_ad"] = googletag.defineSlot("/8375/www.dcunited.com/schedule", [120, 60], "dfp-ad-title_ad")
+  .addService(googletag.pubads())
+  .setTargeting("position", "title-ad");</script>
+<script>googletag.slots["right1"] = googletag.defineSlot("/8375/www.mlssoccer.com/www.dcunited.com/schedule", [300, 250], "dfp-ad-right1")
+  .addService(googletag.pubads())
+  .setTargeting("position", "right1");</script>
+<script>googletag.slots["right2"] = googletag.defineSlot("/8375/www.dcunited.com/schedule", [300, 250], "dfp-ad-right2")
+  .addService(googletag.pubads())
+  .setTargeting("position", "right2");</script>
+<script>var mapping = googletag.sizeMapping()
+  .addSize([0, 0], [320, 50])
+  .addSize([740, 200], [728, 90])
+  .build();
+googletag.slots["leaderboard_footer"] = googletag.defineSlot("/8375/www.dcunited.com/schedule", [728, 90], "dfp-ad-leaderboard_footer")
+  .addService(googletag.pubads())
+  .setTargeting("position", "leaderboard-2")
+  .defineSizeMapping(mapping);</script>
+<script>googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+  googletag.pubads().setTargeting("lang", "en");
+});
+
+googletag.enableServices();</script>
+<script src="https://www.dcunited.com/s3fs-js/js/js_3gn4MA6k8tpgNskXUQZahmyPjXJOkLc1haUU54s-wA4.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-6382100-6", {"cookieDomain":"auto"});ga("require", "displayfeatures");ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dc","theme_token":"gk5idUoPAmhRC1j4fwOWWLUB0Jy8M916s5X_VHT35AA","js":{"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/contrib\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/custom\/mp7_tracking_pixels\/js\/mp7_tracking_pixels.js":1,"sites\/all\/modules\/custom\/mp7_tracking_pixels\/js\/hashes.js":1,"sites\/all\/themes\/custom\/mp7\/js\/vendor\/jquery.fitvids.js":1,"sites\/all\/themes\/custom\/mp7\/js\/vendor\/iealert.min.js":1,"sites\/all\/themes\/custom\/mp7\/js\/vendor\/fastclick.js":1,"sites\/all\/themes\/custom\/mp7\/js\/vendor\/affix.js":1,"sites\/all\/themes\/custom\/mp7\/js\/vendor\/jstz.js":1,"sites\/all\/themes\/custom\/mp7\/js\/vendor\/moment.min.js":1,"sites\/all\/themes\/custom\/mp7\/js\/vendor\/moment-timezone-with-data.min.js":1,"sites\/all\/themes\/custom\/mp7\/js\/vendor\/countdown.min.js":1,"sites\/all\/themes\/custom\/mp7\/js\/vendor\/underscore-min.js":1,"sites\/all\/themes\/custom\/mp7\/js\/mp7_main.js":1,"sites\/dc\/themes\/dc\/js\/dc_main.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"0":1,"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"1":1,"2":1,"3":1,"4":1,"5":1,"6":1,"7":1,"sites\/all\/modules\/custom\/mp7_gigya\/theme\/mp7-gigya.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"8":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/cache_consistent\/css\/cache_consistent.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/chartbeat\/chartbeat.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/contrib\/nice_menus\/css\/nice_menus_default.css":1,"sites\/all\/themes\/custom\/mp7\/system.menus.css":1,"sites\/all\/themes\/custom\/mp7\/css\/main.css":1,"sites\/all\/themes\/custom\/mp7\/css\/print.css":1,"sites\/all\/themes\/custom\/mp7\/css\/iealert\/style.css":1,"sites\/all\/themes\/custom\/mp7\/css\/font-awesome.min.css":1,"1":1,"0":1}},"chartbeat":{"uid":6137,"domain":"dcunited.com","useCanonical":true,"noCookies":false},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"mp7PostEspnTitle":{"espnTid":"306"},"mp7Gigya":{"golazoApiUrl":null,"clubNamesOptas":{"Atlanta United FC":11091,"Chicago Fire":1207,"FC Cincinnati":11504,"Colorado Rapids":436,"Columbus Crew":454,"FC Dallas":1903,"D.C. United":1326,"Houston Dynamo":1897,"Los Angeles FC":11690,"LA Galaxy":1230,"Minnesota United FC":6977,"Montreal Impact":1616,"New England Revolution":928,"New York City FC":9668,"New York Red Bulls":399,"Orlando City SC":6900,"Philadelphia Union":5513,"Portland Timbers":1581,"Real Salt Lake":1899,"San Jose Earthquakes":1131,"Seattle Sounders FC":3500,"Sporting Kansas City":421,"Toronto FC":2077,"Vancouver Whitecaps FC":1708,"Austin FC":"","Inter Miami CF":"","Nashville":""}},"mp7Comscore":{"id":"6036539"},"urlIsAjaxTrusted":{"\/schedule":true},"nice_menus_options":{"delay":"800","speed":"slow"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"mp7Language":"en"});</script>
+    <script async src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-schedule i18n-en site-dc section-schedule" >
+  
+  <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>  
+          <div id="bg">
+
+  <div id="mls-global" class="mls_network clearfix">
+      <div class="region region-mls-global">
+      <div id="block-mp7-competition-banner-mp7-competition-banner" class="block block-mp7-competition-banner first odd">
+
+            
+    <div class="mls">
+  <a href="https://www.mlssoccer.com/" class="banner-network-logo"></a>
+  <a href="https://www.mlssoccer.com/" class="banner-logo banner-network">
+    MLSSOCCER  </a>
+    <div class="banner-tablet">
+    <div class="tablet-conf">
+      <a href="#" class="club_toggle">Western Conference <i class="fa fa-angle-down"></i> </a>
+      <div class="club_dropdown">
+        <a href="https://www.coloradorapids.com/" class="banner-club-tablet colorado" title="Colorado Rapids">Colorado Rapids</a><a href="https://www.fcdallas.com/" class="banner-club-tablet dallas" title="FC Dallas">FC Dallas</a><a href="https://www.houstondynamo.com/" class="banner-club-tablet houston" title="Houston Dynamo">Houston Dynamo</a><a href="https://www.lafc.com/" class="banner-club-tablet lafc" title="Los Angeles FC">Los Angeles FC</a><a href="https://www.lagalaxy.com/" class="banner-club-tablet los-angeles" title="LA Galaxy">LA Galaxy</a><a href="https://www.mnufc.com/" class="banner-club-tablet minnesota" title="Minnesota United FC">Minnesota United FC</a><a href="https://www.timbers.com/" class="banner-club-tablet portland" title="Portland Timbers">Portland Timbers</a><a href="https://www.rsl.com/" class="banner-club-tablet salt-lake" title="Real Salt Lake">Real Salt Lake</a><a href="https://www.sjearthquakes.com/" class="banner-club-tablet san-jose" title="San Jose Earthquakes">San Jose Earthquakes</a><a href="https://www.soundersfc.com/" class="banner-club-tablet seattle" title="Seattle Sounders FC">Seattle Sounders FC</a><a href="https://www.sportingkc.com/" class="banner-club-tablet kansas-city" title="Sporting Kansas City">Sporting Kansas City</a><a href="https://www.whitecapsfc.com/" class="banner-club-tablet vancouver" title="Vancouver Whitecaps FC">Vancouver Whitecaps FC</a>      </div>
+    </div>
+    <div class="tablet-conf">
+      <a href="#" class="club_toggle">Eastern Conference <i class="fa fa-angle-down"></i> </a>
+      <div class="club_dropdown">
+        <a href="https://atlutd.com/" class="banner-club-tablet atlanta" title="Atlanta United FC">Atlanta United FC</a><a href="https://www.chicago-fire.com/" class="banner-club-tablet chicago" title="Chicago Fire">Chicago Fire</a><a href="https://www.columbuscrewsc.com/" class="banner-club-tablet columbus" title="Columbus Crew">Columbus Crew</a><a href="https://www.dcunited.com/" class="banner-club-tablet dc" title="D.C. United">D.C. United</a><a href="https://www.impactmontreal.com/" class="banner-club-tablet montreal" title="Montreal Impact">Montreal Impact</a><a href="https://www.revolutionsoccer.net/" class="banner-club-tablet new-england" title="New England Revolution">New England Revolution</a><a href="https://www.nycfc.com/" class="banner-club-tablet new-york-2" title="New York City FC">New York City FC</a><a href="https://www.newyorkredbulls.com/" class="banner-club-tablet new-york" title="New York Red Bulls">New York Red Bulls</a><a href="https://www.orlandocitysc.com/" class="banner-club-tablet orlando" title="Orlando City SC">Orlando City SC</a><a href="https://www.philadelphiaunion.com/" class="banner-club-tablet philadelphia" title="Philadelphia Union">Philadelphia Union</a><a href="https://www.torontofc.ca/" class="banner-club-tablet toronto" title="Toronto FC">Toronto FC</a>      </div>
+    </div>
+    <div class="tablet-conf">
+      <a href="#" class="club_toggle">Expansion <i class="fa fa-angle-down"></i></a>
+      <div class="club_dropdown">
+        <a href="https://www.fccincinnati.com/" class="banner-club-tablet cincinnati" title="FC Cincinnati">FC Cincinnati</a><a href="https://www.AustinFC.com" class="banner-club-tablet austin" title="Austin FC">Austin FC</a><a href="https://www.intermiamicf.com/" class="banner-club-tablet miami" title="Inter Miami CF">Inter Miami CF</a><a href="https://www.mls2nashville.com/" class="banner-club-tablet nashville" title="Nashville">Nashville</a>      </div>
+    </div>
+  </div>
+  <div class="banner-all-clubs collapsed" id="comp-banner-collapse">
+    <div class="banner-club-container row-1">
+      <a href="https://atlutd.com/" class="banner-logo banner-club-logo atlanta" title="Atlanta United FC"></a><a href="https://www.chicago-fire.com/" class="banner-logo banner-club-logo chicago" title="Chicago Fire"></a><a href="https://www.fccincinnati.com/" class="banner-logo banner-club-logo cincinnati" title="FC Cincinnati"></a><a href="https://www.coloradorapids.com/" class="banner-logo banner-club-logo colorado" title="Colorado Rapids"></a><a href="https://www.columbuscrewsc.com/" class="banner-logo banner-club-logo columbus" title="Columbus Crew"></a><a href="https://www.fcdallas.com/" class="banner-logo banner-club-logo dallas" title="FC Dallas"></a><a href="https://www.dcunited.com/" class="banner-logo banner-club-logo dc" title="D.C. United"></a><a href="https://www.houstondynamo.com/" class="banner-logo banner-club-logo houston" title="Houston Dynamo"></a><a href="https://www.lafc.com/" class="banner-logo banner-club-logo lafc" title="Los Angeles FC"></a><a href="https://www.lagalaxy.com/" class="banner-logo banner-club-logo los-angeles" title="LA Galaxy"></a><a href="https://www.mnufc.com/" class="banner-logo banner-club-logo minnesota" title="Minnesota United FC"></a><a href="https://www.impactmontreal.com/" class="banner-logo banner-club-logo montreal" title="Montreal Impact"></a><a href="https://www.revolutionsoccer.net/" class="banner-logo banner-club-logo new-england" title="New England Revolution"></a><a href="https://www.nycfc.com/" class="banner-logo banner-club-logo new-york-2" title="New York City FC"></a><a href="https://www.newyorkredbulls.com/" class="banner-logo banner-club-logo new-york" title="New York Red Bulls"></a><a href="https://www.orlandocitysc.com/" class="banner-logo banner-club-logo orlando" title="Orlando City SC"></a><a href="https://www.philadelphiaunion.com/" class="banner-logo banner-club-logo philadelphia" title="Philadelphia Union"></a><a href="https://www.timbers.com/" class="banner-logo banner-club-logo portland" title="Portland Timbers"></a><a href="https://www.rsl.com/" class="banner-logo banner-club-logo salt-lake" title="Real Salt Lake"></a><a href="https://www.sjearthquakes.com/" class="banner-logo banner-club-logo san-jose" title="San Jose Earthquakes"></a><a href="https://www.soundersfc.com/" class="banner-logo banner-club-logo seattle" title="Seattle Sounders FC"></a><a href="https://www.sportingkc.com/" class="banner-logo banner-club-logo kansas-city" title="Sporting Kansas City"></a><a href="https://www.torontofc.ca/" class="banner-logo banner-club-logo toronto" title="Toronto FC"></a><a href="https://www.whitecapsfc.com/" class="banner-logo banner-club-logo vancouver" title="Vancouver Whitecaps FC"></a><a href="https://www.AustinFC.com" class="banner-logo banner-club-logo austin" title="Austin FC"></a><a href="https://www.intermiamicf.com/" class="banner-logo banner-club-logo miami" title="Inter Miami CF"></a><a href="https://www.mls2nashville.com/" class="banner-logo banner-club-logo nashville" title="Nashville"></a>    </div>
+  </div>
+</div>
+
+  </div><!-- /.block -->
+  <div id="block-mp7-gigya-mp7-gigya-header-login" class="block block-mp7-gigya last even">
+
+            
+    <div id="mp7-gigya-login">
+    <div class="mp7-gigya-profile"><a href="/account"><img id="mp7-gigya-photo" class="mp7-gigya-account-photo" src="" width="35" height="35" /><span id="mp7-gigya-name" class="mp7-gigya-logged-in" ></span></a>
+    </div>
+    <div class="mp7-gigya-login-option clearfix">
+      <a href="#" class="mp7-gigya-login-dmp-login" onclick="gigya.accounts.showScreenSet({screenSet:'Login-web'});">Login</a>
+      <span class="divider">|</span>
+      <a href="#" onclick="gigya.accounts.showScreenSet({screenSet:'Login-web', startScreen:'gigya-register-screen', onSubmit: mp7Gigya.misc.registerGigya});">Sign Up</a>
+    </div>
+  </div>
+  </div><!-- /.block -->
+  </div><!-- /.region -->
+  </div>
+
+  <div id="page" class="wire">
+
+    <header id="header" role="banner" class="clearfix">
+      <div id="ad-region1">
+          <div class="region region-ad-first">
+      <div id="block-dfp-leaderboard" class="block block-dfp first last odd">
+
+            
+    <div id="dfp-ad-leaderboard-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-leaderboard" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-leaderboard");
+    });
+  </script>
+</div>
+</div>
+  </div><!-- /.block -->
+  </div><!-- /.region -->
+      </div>
+              <div class="logo__custom">
+          <a href="/" title="D.C. United" alt="D.C. United">D.C. United</a>
+          <img class="logo__desktop" alt="" title="D.C. United" src="https://dc-mp7static.mlsdigital.net/styles/non-retina_desktop_logo/s3/Logo no TM[1].png?f5iVcTfSDHk_2uBJo8gFJud3_uj7_pR7&amp;itok=VIzp3n3T" />          <img class="logo__desktop--retina" alt="" title="D.C. United" src="https://dc-mp7static.mlsdigital.net/styles/retina_desktop_logo/s3/Logo no TM[1].png?z9sAXMGatbsjSS9WKAtB07X2l2Oi2A4l&amp;itok=QjIRLUWe" />        </div>
+                  <div class="social_sharing">
+          <div class="region region-site-social">
+      <div id="block-mp7-gigya-mp7-gigya-follow-bar-block" class="block block-mp7-gigya first last odd">
+
+            
+    <div id="followbarDiv" class="gig-followbar"><a rel="nofollow" href="https://www.facebook.com/dcunited" title="" alt="" target="_blank" class="gig-followbar-providerButton">
+              <img alt="" class="gig-followbar-providerButton-img" src="https://www.dcunited.com/sites/all/themes/custom/mp7/images/follow_facebook.png" width="20" height="20" style="width:20px;height:20px;margin:1px;">
+            </a><a rel="nofollow" href="https://twitter.com/dcunited" title="" alt="" target="_blank" class="gig-followbar-providerButton">
+              <img alt="" class="gig-followbar-providerButton-img" src="https://www.dcunited.com/sites/all/themes/custom/mp7/images/follow_twitter.png" width="20" height="20" style="width:20px;height:20px;margin:1px;">
+            </a><a rel="nofollow" href="https://instagram.com/dcunited" title="" alt="" target="_blank" class="gig-followbar-providerButton">
+              <img alt="" class="gig-followbar-providerButton-img" src="https://www.dcunited.com/sites/all/themes/custom/mp7/images/follow_instagram.png" width="20" height="20" style="width:20px;height:20px;margin:1px;">
+            </a><a rel="nofollow" href="https://www.youtube.com/user/dcunited" title="" alt="" target="_blank" class="gig-followbar-providerButton">
+              <img alt="" class="gig-followbar-providerButton-img" src="https://www.dcunited.com/sites/all/themes/custom/mp7/images/follow_youtube.png" width="20" height="20" style="width:20px;height:20px;margin:1px;">
+            </a><a rel="nofollow" href="http://www.dcunited.com/subscribe" title="" alt="" target="_blank" class="gig-followbar-providerButton">
+              <img alt="" class="gig-followbar-providerButton-img" src="https://www.dcunited.com/sites/all/themes/custom/mp7/images/follow_email.png" width="20" height="20" style="width:20px;height:20px;margin:1px;">
+            </a><a rel="nofollow" href="http://www.dcunited.com/posts/rss" title="" alt="" target="_blank" class="gig-followbar-providerButton">
+              <img alt="" class="gig-followbar-providerButton-img" src="https://www.dcunited.com/sites/all/themes/custom/mp7/images/follow_rss.png" width="20" height="20" style="width:20px;height:20px;margin:1px;">
+            </a></div>
+  </div><!-- /.block -->
+  </div><!-- /.region -->
+      </div>
+      <div class="presented">
+          <div class="region region-presented-by">
+      <div id="block-dfp-entitlement" class="block block-dfp first last odd">
+
+            
+    <div id="dfp-ad-entitlement-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-entitlement" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-entitlement");
+    });
+  </script>
+</div>
+</div>
+  </div><!-- /.block -->
+  </div><!-- /.region -->
+      </div>
+    </header>
+
+    <div id="navigation" class="has-ad-first">
+        <div class="region region-navigation nav_wrapper">
+    <input class="menu-checkbox" id="main-menu-handler" type="checkbox">
+    <label class="slide-gap" for="main-menu-handler"></label>
+    <nav class="slide-menu slide-left" id="main-menu">
+        <div id="block-menu-menu-main-menu-cms" class="block block-menu first last odd" role="navigation">
+
+              <h2 class="block-title">Main Menu CMS</h2>
+        
+    <ul class="menu"><li class="first expanded"><a href="https://www.dcunited.com/tickets" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Tickets&#039;,&#039;https://www.dcunited.com/tickets&#039;);">Tickets</a><div class="dropdown"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www1.ticketmaster.com/event/15005629D3D54464?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2E" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;2019 Audi Field Opener&#039;,&#039;https://www1.ticketmaster.com/event/15005629D3D54464?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2E&#039;);">2019 Audi Field Opener</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/season-ticket-memberships" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Season Ticket Memberships&#039;,&#039;https://www.dcunited.com/tickets/season-ticket-memberships&#039;);">Season Ticket Memberships</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/single-match-tickets" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Single Match Tickets &#039;,&#039;https://www.dcunited.com/tickets/single-match-tickets&#039;);">Single Match Tickets </a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/multi-game-ticket-packages" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Multi-Game Ticket Packages&#039;,&#039;https://www.dcunited.com/tickets/multi-game-ticket-packages&#039;);">Multi-Game Ticket Packages</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/tickets/premium-seats" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;All-Inclusive Premium Seating&#039;,&#039;https://www.dcunited.com/tickets/premium-seats&#039;);">All-Inclusive Premium Seating</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www.dcunited.com/tickets/annual-suites" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Suites&#039;,&#039;https://www.dcunited.com/tickets/annual-suites&#039;);">Suites</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/group-experiences" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Group &amp; Corporate Hospitality&#039;,&#039;https://www.dcunited.com/tickets/group-experiences&#039;);">Group &amp; Corporate Hospitality</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/fan-experiences" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Fan &amp; Group Experiences &#039;,&#039;https://www.dcunited.com/tickets/fan-experiences&#039;);">Fan &amp; Group Experiences </a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/stmhq" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Member HQ&#039;,&#039;https://www.dcunited.com/tickets/stmhq&#039;);">Member HQ</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/tickets/mobile-ticketing" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Mobile Ticketing&#039;,&#039;https://www.dcunited.com/tickets/mobile-ticketing&#039;);">Mobile Ticketing</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul><div class="advertisement-bean clearfix">
+  <div class="content">
+    <a href="https://www.ticketmaster.com/artist/806390?tm_link=tm_header_search"><img class="" src="https://dc-mp7static.mlsdigital.net/styles/image_300x100/s3/TM-VerifiedLogo copy.png?rECHj6mV.6tM7A94CsBdIJov4FRD8YhO&amp;itok=mGY6HIWf" width="300" height="100" alt="nav_ad_tickets" title="nav_ad_tickets" /></a>  </div>
+</div>
+</div></li>
+<li class="expanded"><a href="/news" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;News&#039;,&#039;news&#039;);">News</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/news" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;All News&#039;,&#039;news&#039;);">All News</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/topics/academy-news" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Academy&#039;,&#039;topics/academy-news&#039;);">Academy</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/topics/featured" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Featured&#039;,&#039;topics/featured&#039;);">Featured</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/topics/community-news" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Community&#039;,&#039;topics/community-news&#039;);">Community</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/topics/match-center" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Match Center&#039;,&#039;topics/match-center&#039;);">Match Center</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/topics/press-releases" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Press Releases&#039;,&#039;topics/press-releases&#039;);">Press Releases</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/topics/post-match-facts" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Post-Match Facts&#039;,&#039;topics/post-match-facts&#039;);">Post-Match Facts</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/topics/post-match-quotes" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Post-Match Quotes&#039;,&#039;topics/post-match-quotes&#039;);">Post-Match Quotes</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/topics/loudoununitedfc" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Loudoun United FC&#039;,&#039;topics/loudoununitedfc&#039;);">Loudoun United FC</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="http://dcun.it/ed_2nmuRH5" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Giphy&#039;,&#039;http://dcun.it/ed_2nmuRH5&#039;);">Giphy</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/media" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Media&#039;,&#039;media&#039;);">Media</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/videos" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Video&#039;,&#039;videos&#039;);">Video</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/videos/featured" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Featured&#039;,&#039;videos/featured&#039;);">Featured</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/videos/match-highlights" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Match Highlights &#039;,&#039;videos/match-highlights&#039;);">Match Highlights </a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/videos/from-the-pitch" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;From the Pitch&#039;,&#039;videos/from-the-pitch&#039;);">From the Pitch</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/videos/united-60-%7C-week-in-review" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Black-and-Red Basics&#039;,&#039;videos/united-60-|-week-in-review&#039;);">Black-and-Red Basics</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/videos/free-kick" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Free Kick&#039;,&#039;videos/free-kick&#039;);">Free Kick</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/videos/chalk-talk" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Chalk Talk&#039;,&#039;videos/chalk-talk&#039;);">Chalk Talk</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/videos/from-the-vault" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;From the Vault&#039;,&#039;videos/from-the-vault&#039;);">From the Vault</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first last leaf"><a href="/flosports" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;FloSports&#039;,&#039;flosports&#039;);">FloSports</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/club" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Club&#039;,&#039;club&#039;);">Club</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/players" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Roster&#039;,&#039;players&#039;);">Roster</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/coaches" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Technical Staff&#039;,&#039;coaches&#039;);">Technical Staff</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/club/official-partners" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Official Partners&#039;,&#039;club/official-partners&#039;);">Official Partners</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/club/ownership" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Ownership&#039;,&#039;club/ownership&#039;);">Ownership</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/club/bar-partners" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Bar Partners&#039;,&#039;club/bar-partners&#039;);">Bar Partners</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/club/front-office" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Front Office&#039;,&#039;club/front-office&#039;);">Front Office</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/stats" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Stats&#039;,&#039;stats&#039;);">Stats</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/standings" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Standings&#039;,&#039;standings&#039;);">Standings</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded active-trail"><a href="/schedule" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Schedule&#039;,&#039;schedule&#039;);" class="active-trail active">Schedule</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded active-trail"><a href="/" class="nav_col_1 active-trail" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf active-trail"><a href="/schedule" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;D.C. United Schedule&#039;,&#039;schedule&#039;);" class="active-trail active">D.C. United Schedule</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/schedule/broadcast" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Broadcast Schedule &#039;,&#039;schedule/broadcast&#039;);">Broadcast Schedule </a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/schedule/download" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Download Schedule&#039;,&#039;schedule/download&#039;);">Download Schedule</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www.dcunited.com/content/printable-schedules" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Printable Schedules&#039;,&#039;https://www.dcunited.com/content/printable-schedules&#039;);">Printable Schedules</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlssoccer.com/schedule" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;MLS Schedule&#039;,&#039;http://www.mlssoccer.com/schedule&#039;);">MLS Schedule</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last leaf"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/matchday" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Matchday&#039;,&#039;matchday&#039;);">Matchday</a><div class="dropdown"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/matchday/a-to-z-guide" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;A-to-Z Guide&#039;,&#039;matchday/a-to-z-guide&#039;);">A-to-Z Guide</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/matchday/clear-bag" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Clear Bag Policy &#039;,&#039;matchday/clear-bag&#039;);">Clear Bag Policy </a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/matchday/prohibited-items" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Prohibited Items&#039;,&#039;matchday/prohibited-items&#039;);">Prohibited Items</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/matchday/fan-code-of-conduct" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Fan Code of Conduct&#039;,&#039;matchday/fan-code-of-conduct&#039;);">Fan Code of Conduct</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/matchday/transportation" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Getting to Audi Field&#039;,&#039;matchday/transportation&#039;);">Getting to Audi Field</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/matchday/concessions" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Concessions&#039;,&#039;matchday/concessions&#039;);">Concessions</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/tickets/mobile-ticketing" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Mobile Ticketing&#039;,&#039;tickets/mobile-ticketing&#039;);">Mobile Ticketing</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/flosports" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;FloSports&#039;,&#039;flosports&#039;);">FloSports</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/content/ada-information" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;ADA Information&#039;,&#039;https://www.dcunited.com/content/ada-information&#039;);">ADA Information</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul><div class="advertisement-bean clearfix">
+  <div class="content">
+    <a href="https://www.tirepros.com/"><img class="" src="https://dc-mp7static.mlsdigital.net/styles/image_300x100/s3/TirePros_Logo_400x300_0.png?PDkPe1ld39UGdcvTNjBjbNsxW81UIqng&amp;itok=LfcvUxxk" width="300" height="100" alt="nav_ad_matchday" title="nav_ad_matchday" /></a>  </div>
+</div>
+</div></li>
+<li class="expanded"><a href="/academy" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Academy &#039;,&#039;academy&#039;);">Academy </a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/academy" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Academy Home&#039;,&#039;academy&#039;);">Academy Home</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/teams" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Teams&#039;,&#039;academy/teams&#039;);">Teams</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/coaches-and-staff" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Technical Staff&#039;,&#039;academy/coaches-and-staff&#039;);">Technical Staff</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/academy/recruitment" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Recruitment&#039;,&#039;academy/recruitment&#039;);">Recruitment</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/academy/dtp" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Development Training Programs&#039;,&#039;academy/dtp&#039;);">Development Training Programs</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/calverton-residency-program" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Residency Program&#039;,&#039;academy/calverton-residency-program&#039;);">Residency Program</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/scouting" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Scouting&#039;,&#039;academy/scouting&#039;);">Scouting</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/academy/faq" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Academy FAQ&#039;,&#039;academy/faq&#039;);">Academy FAQ</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www.dcunited.com/academy/camps/tryouts" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Tryouts&#039;,&#039;https://www.dcunited.com/academy/camps/tryouts&#039;);">Tryouts</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/camps/tryouts" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;U-23 Information&#039;,&#039;academy/camps/tryouts&#039;);">U-23 Information</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/academy/camps/talent-center" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Talent Center&#039;,&#039;https://www.dcunited.com/academy/camps/talent-center&#039;);">Talent Center</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/community" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Community&#039;,&#039;community&#039;);">Community</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/topics/community-news" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;News&#039;,&#039;topics/community-news&#039;);">News</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/community/partners" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Community Partners&#039;,&#039;community/partners&#039;);">Community Partners</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/community/donations-from-united" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Donation Requests&#039;,&#039;community/donations-from-united&#039;);">Donation Requests</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/community/star" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Community Star&#039;,&#039;community/star&#039;);">Community Star</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/community/name-in-lights" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Name in Lights&#039;,&#039;community/name-in-lights&#039;);">Name in Lights</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/camps" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Camps&#039;,&#039;camps&#039;);">Camps</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/camps/programs" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Camp Programs&#039;,&#039;camps/programs&#039;);">Camp Programs</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/camps/juniors" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Juniors&#039;,&#039;camps/juniors&#039;);">Juniors</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/camps/youth-development" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Youth Development &#039;,&#039;camps/youth-development&#039;);">Youth Development </a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/holidaycup" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Youth Tournaments&#039;,&#039;https://www.dcunited.com/holidaycup&#039;);">Youth Tournaments</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="http://www.mlsstore.com/DC_United_Gear/source/BM-mlscom-DCUNITED-TopNav-022615" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Shop&#039;,&#039;http://www.mlsstore.com/DC_United_Gear/source/BM-mlscom-DCUNITED-TopNav-022615&#039;);">Shop</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="http://www.mlsstore.com/DC_United_Jerseys/source/BM-mlscom-DCUN-StoreDDJerseys-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Jerseys&#039;,&#039;http://www.mlsstore.com/DC_United_Jerseys/source/BM-mlscom-DCUN-StoreDDJerseys-42716&#039;);">Jerseys</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlsstore.com/DC_United_Men/source/BM-mlscom-DCUN-StoreDDMEN-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Men&#039;s&#039;,&#039;http://www.mlsstore.com/DC_United_Men/source/BM-mlscom-DCUN-StoreDDMEN-42716&#039;);">Men&#039;s</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="http://www.mlsstore.com/DC_United_Women/source/BM-mlscom-DCUN-StoreDDWOMEN-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Women&#039;s&#039;,&#039;http://www.mlsstore.com/DC_United_Women/source/BM-mlscom-DCUN-StoreDDWOMEN-42716&#039;);">Women&#039;s</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlsstore.com/DC_United_Kids/source/BM-mlscom-DCUN-StoreDDKids-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Kids&#039;&#039;,&#039;http://www.mlsstore.com/DC_United_Kids/source/BM-mlscom-DCUN-StoreDDKids-42716&#039;);">Kids&#039;</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="http://www.mlsstore.com/DC_United_Accessories/source/BM-mlscom-DCUN-StoreDDAccessories-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Accessories&#039;,&#039;http://www.mlsstore.com/DC_United_Accessories/source/BM-mlscom-DCUN-StoreDDAccessories-42716&#039;);">Accessories</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlsstore.com/DC_United_Home_&amp;_Office/source/BM-mlscom-DCUN-StoreDDHOME&amp;OFFICE-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Home and Office&#039;,&#039;http://www.mlsstore.com/DC_United_Home_&amp;_Office/source/BM-mlscom-DCUN-StoreDDHOME&amp;OFFICE-42716&#039;);">Home and Office</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/espanol" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;ESPAÑOL&#039;,&#039;https://www.dcunited.com/espanol&#039;);">ESPAÑOL</a><div class="dropdown no_advertisement"></div></li>
+<li class="last expanded"><a href="/" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;More&#039;,&#039;&lt;front&gt;&#039;);">More</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/app" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;D.C. United App&#039;,&#039;app&#039;);">D.C. United App</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/supporters" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Supporters Clubs&#039;,&#039;supporters&#039;);">Supporters Clubs</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/watch-parties" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Official Watch Parties&#039;,&#039;watch-parties&#039;);">Official Watch Parties</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/trophy-case" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Trophy Case&#039;,&#039;club/trophy-case&#039;);">Trophy Case</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/talon" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Talon&#039;,&#039;talon&#039;);">Talon</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/district-96" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;District &#039;96&#039;,&#039;district-96&#039;);">District &#039;96</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+</ul>
+  </div><!-- /.block -->
+    </nav>
+    <main>
+      <label class="menu-nav main-menu-button" for="main-menu-handler" onclick>
+        <i class="fa fa-reorder"></i>
+      </label>
+              <div class="logo__custom--mobile">
+          <a href="/" title="" alt="">
+          <img class="logo__mobile" alt="" title="D.C. United logo" src="https://dc-mp7static.mlsdigital.net/styles/non-retina_mobile_logo/s3/dc_340x34_mobile_onred2.png?mMDjuYN8HJZ0wjATZLy9sS9Al_CKgRjR&amp;itok=2um3uVUC" />          <img class="logo__mobile--retina" alt="" title="D.C. United logo" src="https://dc-mp7static.mlsdigital.net/styles/retina_mobile_logo/s3/dc_340x34_mobile_onred2.png?WXuVkYAbKUT4jGxIagDsLormAhlGmR3w&amp;itok=Dx1YAaud" />          </a>
+        </div>
+              <div id="block-menu-menu-main-menu-cms" class="block block-menu first last odd" role="navigation">
+
+              <h2 class="block-title">Main Menu CMS</h2>
+        
+    <ul class="menu"><li class="first expanded"><a href="https://www.dcunited.com/tickets" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Tickets&#039;,&#039;https://www.dcunited.com/tickets&#039;);">Tickets</a><div class="dropdown"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www1.ticketmaster.com/event/15005629D3D54464?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2E" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;2019 Audi Field Opener&#039;,&#039;https://www1.ticketmaster.com/event/15005629D3D54464?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2E&#039;);">2019 Audi Field Opener</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/season-ticket-memberships" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Season Ticket Memberships&#039;,&#039;https://www.dcunited.com/tickets/season-ticket-memberships&#039;);">Season Ticket Memberships</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/single-match-tickets" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Single Match Tickets &#039;,&#039;https://www.dcunited.com/tickets/single-match-tickets&#039;);">Single Match Tickets </a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/multi-game-ticket-packages" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Multi-Game Ticket Packages&#039;,&#039;https://www.dcunited.com/tickets/multi-game-ticket-packages&#039;);">Multi-Game Ticket Packages</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/tickets/premium-seats" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;All-Inclusive Premium Seating&#039;,&#039;https://www.dcunited.com/tickets/premium-seats&#039;);">All-Inclusive Premium Seating</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www.dcunited.com/tickets/annual-suites" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Suites&#039;,&#039;https://www.dcunited.com/tickets/annual-suites&#039;);">Suites</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/group-experiences" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Group &amp; Corporate Hospitality&#039;,&#039;https://www.dcunited.com/tickets/group-experiences&#039;);">Group &amp; Corporate Hospitality</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/fan-experiences" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Fan &amp; Group Experiences &#039;,&#039;https://www.dcunited.com/tickets/fan-experiences&#039;);">Fan &amp; Group Experiences </a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/tickets/stmhq" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Member HQ&#039;,&#039;https://www.dcunited.com/tickets/stmhq&#039;);">Member HQ</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/tickets/mobile-ticketing" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Mobile Ticketing&#039;,&#039;https://www.dcunited.com/tickets/mobile-ticketing&#039;);">Mobile Ticketing</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul><div class="advertisement-bean clearfix">
+  <div class="content">
+    <a href="https://www.ticketmaster.com/artist/806390?tm_link=tm_header_search"><img class="" src="https://dc-mp7static.mlsdigital.net/styles/image_300x100/s3/TM-VerifiedLogo copy.png?rECHj6mV.6tM7A94CsBdIJov4FRD8YhO&amp;itok=mGY6HIWf" width="300" height="100" alt="nav_ad_tickets" title="nav_ad_tickets" /></a>  </div>
+</div>
+</div></li>
+<li class="expanded"><a href="/news" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;News&#039;,&#039;news&#039;);">News</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/news" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;All News&#039;,&#039;news&#039;);">All News</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/topics/academy-news" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Academy&#039;,&#039;topics/academy-news&#039;);">Academy</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/topics/featured" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Featured&#039;,&#039;topics/featured&#039;);">Featured</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/topics/community-news" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Community&#039;,&#039;topics/community-news&#039;);">Community</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/topics/match-center" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Match Center&#039;,&#039;topics/match-center&#039;);">Match Center</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/topics/press-releases" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Press Releases&#039;,&#039;topics/press-releases&#039;);">Press Releases</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/topics/post-match-facts" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Post-Match Facts&#039;,&#039;topics/post-match-facts&#039;);">Post-Match Facts</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/topics/post-match-quotes" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Post-Match Quotes&#039;,&#039;topics/post-match-quotes&#039;);">Post-Match Quotes</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/topics/loudoununitedfc" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Loudoun United FC&#039;,&#039;topics/loudoununitedfc&#039;);">Loudoun United FC</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="http://dcun.it/ed_2nmuRH5" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Giphy&#039;,&#039;http://dcun.it/ed_2nmuRH5&#039;);">Giphy</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/media" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Media&#039;,&#039;media&#039;);">Media</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/videos" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Video&#039;,&#039;videos&#039;);">Video</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/videos/featured" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Featured&#039;,&#039;videos/featured&#039;);">Featured</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/videos/match-highlights" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Match Highlights &#039;,&#039;videos/match-highlights&#039;);">Match Highlights </a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/videos/from-the-pitch" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;From the Pitch&#039;,&#039;videos/from-the-pitch&#039;);">From the Pitch</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/videos/united-60-%7C-week-in-review" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Black-and-Red Basics&#039;,&#039;videos/united-60-|-week-in-review&#039;);">Black-and-Red Basics</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/videos/free-kick" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Free Kick&#039;,&#039;videos/free-kick&#039;);">Free Kick</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/videos/chalk-talk" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Chalk Talk&#039;,&#039;videos/chalk-talk&#039;);">Chalk Talk</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/videos/from-the-vault" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;From the Vault&#039;,&#039;videos/from-the-vault&#039;);">From the Vault</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first last leaf"><a href="/flosports" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;FloSports&#039;,&#039;flosports&#039;);">FloSports</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/club" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Club&#039;,&#039;club&#039;);">Club</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/players" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Roster&#039;,&#039;players&#039;);">Roster</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/coaches" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Technical Staff&#039;,&#039;coaches&#039;);">Technical Staff</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/club/official-partners" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Official Partners&#039;,&#039;club/official-partners&#039;);">Official Partners</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/club/ownership" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Ownership&#039;,&#039;club/ownership&#039;);">Ownership</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/club/bar-partners" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Bar Partners&#039;,&#039;club/bar-partners&#039;);">Bar Partners</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/club/front-office" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Front Office&#039;,&#039;club/front-office&#039;);">Front Office</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/stats" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Stats&#039;,&#039;stats&#039;);">Stats</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/standings" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Standings&#039;,&#039;standings&#039;);">Standings</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded active-trail"><a href="/schedule" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Schedule&#039;,&#039;schedule&#039;);" class="active-trail active">Schedule</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded active-trail"><a href="/" class="nav_col_1 active-trail" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf active-trail"><a href="/schedule" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;D.C. United Schedule&#039;,&#039;schedule&#039;);" class="active-trail active">D.C. United Schedule</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/schedule/broadcast" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Broadcast Schedule &#039;,&#039;schedule/broadcast&#039;);">Broadcast Schedule </a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/schedule/download" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Download Schedule&#039;,&#039;schedule/download&#039;);">Download Schedule</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www.dcunited.com/content/printable-schedules" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Printable Schedules&#039;,&#039;https://www.dcunited.com/content/printable-schedules&#039;);">Printable Schedules</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlssoccer.com/schedule" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;MLS Schedule&#039;,&#039;http://www.mlssoccer.com/schedule&#039;);">MLS Schedule</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last leaf"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/matchday" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Matchday&#039;,&#039;matchday&#039;);">Matchday</a><div class="dropdown"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/matchday/a-to-z-guide" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;A-to-Z Guide&#039;,&#039;matchday/a-to-z-guide&#039;);">A-to-Z Guide</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/matchday/clear-bag" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Clear Bag Policy &#039;,&#039;matchday/clear-bag&#039;);">Clear Bag Policy </a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/matchday/prohibited-items" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Prohibited Items&#039;,&#039;matchday/prohibited-items&#039;);">Prohibited Items</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/matchday/fan-code-of-conduct" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Fan Code of Conduct&#039;,&#039;matchday/fan-code-of-conduct&#039;);">Fan Code of Conduct</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/matchday/transportation" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Getting to Audi Field&#039;,&#039;matchday/transportation&#039;);">Getting to Audi Field</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/matchday/concessions" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Concessions&#039;,&#039;matchday/concessions&#039;);">Concessions</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/tickets/mobile-ticketing" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Mobile Ticketing&#039;,&#039;tickets/mobile-ticketing&#039;);">Mobile Ticketing</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/flosports" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;FloSports&#039;,&#039;flosports&#039;);">FloSports</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/content/ada-information" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;ADA Information&#039;,&#039;https://www.dcunited.com/content/ada-information&#039;);">ADA Information</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul><div class="advertisement-bean clearfix">
+  <div class="content">
+    <a href="https://www.tirepros.com/"><img class="" src="https://dc-mp7static.mlsdigital.net/styles/image_300x100/s3/TirePros_Logo_400x300_0.png?PDkPe1ld39UGdcvTNjBjbNsxW81UIqng&amp;itok=LfcvUxxk" width="300" height="100" alt="nav_ad_matchday" title="nav_ad_matchday" /></a>  </div>
+</div>
+</div></li>
+<li class="expanded"><a href="/academy" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Academy &#039;,&#039;academy&#039;);">Academy </a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/academy" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Academy Home&#039;,&#039;academy&#039;);">Academy Home</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/teams" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Teams&#039;,&#039;academy/teams&#039;);">Teams</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/coaches-and-staff" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Technical Staff&#039;,&#039;academy/coaches-and-staff&#039;);">Technical Staff</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/academy/recruitment" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Recruitment&#039;,&#039;academy/recruitment&#039;);">Recruitment</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/academy/dtp" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Development Training Programs&#039;,&#039;academy/dtp&#039;);">Development Training Programs</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/calverton-residency-program" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Residency Program&#039;,&#039;academy/calverton-residency-program&#039;);">Residency Program</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/scouting" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Scouting&#039;,&#039;academy/scouting&#039;);">Scouting</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/academy/faq" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Academy FAQ&#039;,&#039;academy/faq&#039;);">Academy FAQ</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www.dcunited.com/academy/camps/tryouts" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Tryouts&#039;,&#039;https://www.dcunited.com/academy/camps/tryouts&#039;);">Tryouts</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/academy/camps/tryouts" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;U-23 Information&#039;,&#039;academy/camps/tryouts&#039;);">U-23 Information</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/academy/camps/talent-center" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Talent Center&#039;,&#039;https://www.dcunited.com/academy/camps/talent-center&#039;);">Talent Center</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/community" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Community&#039;,&#039;community&#039;);">Community</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/topics/community-news" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;News&#039;,&#039;topics/community-news&#039;);">News</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/community/partners" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Community Partners&#039;,&#039;community/partners&#039;);">Community Partners</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/community/donations-from-united" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Donation Requests&#039;,&#039;community/donations-from-united&#039;);">Donation Requests</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/community/star" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Community Star&#039;,&#039;community/star&#039;);">Community Star</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/community/name-in-lights" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Name in Lights&#039;,&#039;community/name-in-lights&#039;);">Name in Lights</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/camps" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Camps&#039;,&#039;camps&#039;);">Camps</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/camps/programs" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Camp Programs&#039;,&#039;camps/programs&#039;);">Camp Programs</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/camps/juniors" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Juniors&#039;,&#039;camps/juniors&#039;);">Juniors</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/camps/youth-development" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Youth Development &#039;,&#039;camps/youth-development&#039;);">Youth Development </a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://www.dcunited.com/holidaycup" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Youth Tournaments&#039;,&#039;https://www.dcunited.com/holidaycup&#039;);">Youth Tournaments</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="expanded"><a href="http://www.mlsstore.com/DC_United_Gear/source/BM-mlscom-DCUNITED-TopNav-022615" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Shop&#039;,&#039;http://www.mlsstore.com/DC_United_Gear/source/BM-mlscom-DCUNITED-TopNav-022615&#039;);">Shop</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="http://www.mlsstore.com/DC_United_Jerseys/source/BM-mlscom-DCUN-StoreDDJerseys-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Jerseys&#039;,&#039;http://www.mlsstore.com/DC_United_Jerseys/source/BM-mlscom-DCUN-StoreDDJerseys-42716&#039;);">Jerseys</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlsstore.com/DC_United_Men/source/BM-mlscom-DCUN-StoreDDMEN-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Men&#039;s&#039;,&#039;http://www.mlsstore.com/DC_United_Men/source/BM-mlscom-DCUN-StoreDDMEN-42716&#039;);">Men&#039;s</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="http://www.mlsstore.com/DC_United_Women/source/BM-mlscom-DCUN-StoreDDWOMEN-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Women&#039;s&#039;,&#039;http://www.mlsstore.com/DC_United_Women/source/BM-mlscom-DCUN-StoreDDWOMEN-42716&#039;);">Women&#039;s</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlsstore.com/DC_United_Kids/source/BM-mlscom-DCUN-StoreDDKids-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Kids&#039;&#039;,&#039;http://www.mlsstore.com/DC_United_Kids/source/BM-mlscom-DCUN-StoreDDKids-42716&#039;);">Kids&#039;</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_3" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 3&#039;,&#039;&lt;front&gt;&#039;);">Column 3</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="http://www.mlsstore.com/DC_United_Accessories/source/BM-mlscom-DCUN-StoreDDAccessories-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Accessories&#039;,&#039;http://www.mlsstore.com/DC_United_Accessories/source/BM-mlscom-DCUN-StoreDDAccessories-42716&#039;);">Accessories</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlsstore.com/DC_United_Home_&amp;_Office/source/BM-mlscom-DCUN-StoreDDHOME&amp;OFFICE-42716" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Home and Office&#039;,&#039;http://www.mlsstore.com/DC_United_Home_&amp;_Office/source/BM-mlscom-DCUN-StoreDDHOME&amp;OFFICE-42716&#039;);">Home and Office</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+<li class="leaf"><a href="https://www.dcunited.com/espanol" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;ESPAÑOL&#039;,&#039;https://www.dcunited.com/espanol&#039;);">ESPAÑOL</a><div class="dropdown no_advertisement"></div></li>
+<li class="last expanded"><a href="/" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;More&#039;,&#039;&lt;front&gt;&#039;);">More</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first expanded"><a href="/" class="nav_col_1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 1&#039;,&#039;&lt;front&gt;&#039;);">Column 1</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/app" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;D.C. United App&#039;,&#039;app&#039;);">D.C. United App</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/supporters" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Supporters Clubs&#039;,&#039;supporters&#039;);">Supporters Clubs</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/watch-parties" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Official Watch Parties&#039;,&#039;watch-parties&#039;);">Official Watch Parties</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="/" class="nav_col_2" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Column 2&#039;,&#039;&lt;front&gt;&#039;);">Column 2</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/trophy-case" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Trophy Case&#039;,&#039;club/trophy-case&#039;);">Trophy Case</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/talon" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Talon&#039;,&#039;talon&#039;);">Talon</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/district-96" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;District &#039;96&#039;,&#039;district-96&#039;);">District &#039;96</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul></div></li>
+</ul>
+  </div><!-- /.block -->
+              <a href="/" class="banner-club-logo dc" title="" alt=""></a>
+                    <div id="sb-search" class="sb-search"><form action="/schedule" method="post" id="mp7-search-nav-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-search-nav">
+ <input class="sb-search-input form-text" type="text" id="edit-search-nav" name="search_nav" value="" size="60" maxlength="128" />
+</div>
+<button class="close-icon" type="reset"></button><i class="fa fa-search"></i><input class="sb-search-submit form-submit" type="submit" id="edit-submit--2" name="op" value="" /><input type="hidden" name="form_build_id" value="form-xv3Mi5qJg5E8HvW4skYLsB6AjN9GulF-qCN9xURHIqY" />
+<input type="hidden" name="form_id" value="mp7_search_nav_form" />
+</div></form></div>          </main>
+  </div><!-- /.region -->
+    </div>
+
+    <div id="main">
+
+      <div id="section-menu">
+          <div class="region region-section-menu">
+      <div id="block-dfp-title-ad" class="block block-dfp first odd">
+
+            
+    <div id="dfp-ad-title_ad-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-title_ad" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-title_ad");
+    });
+  </script>
+</div>
+</div>
+  </div><!-- /.block -->
+  <div id="block-nice-menus-2" class="block block-nice-menus last even">
+
+              <h2 class="block-title"><span class="nice-menu-hide-title">Schedule</span></h2>
+        
+    <div class="form-type-select"><select class="form-select"><option value="0">Menu</option><option value="/schedule">D.C. United Schedule</option><option value="/schedule/download">Download Schedule</option><option value="https://www.dcunited.com/content/printable-schedules">Printable Schedules</option><option value="/schedule/broadcast">Broadcast Schedule</option><option value="http://www.mlssoccer.com/schedule">MLS Schedule</option></select></div><ul class="nice-menu nice-menu-down" id="nice-menu-2"><li class="menu-1462 menu-path-schedule active-trail first odd "><a href="/schedule" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;D.C. United Schedule&#039;,&#039;schedule&#039;);" class="active">D.C. United Schedule</a><div class="dropdown no_advertisement"></div></li>
+<li class="menu-18969 menu-path-node-22792  even "><a href="/schedule/download" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Download Schedule&#039;,&#039;schedule/download&#039;);">Download Schedule</a><div class="dropdown no_advertisement"></div></li>
+<li class="menu-27208 menu-path-sdcunitedcom-content-printable-schedules  odd "><a href="https://www.dcunited.com/content/printable-schedules" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Printable Schedules&#039;,&#039;https://www.dcunited.com/content/printable-schedules&#039;);">Printable Schedules</a><div class="dropdown no_advertisement"></div></li>
+<li class="menu-23154 menu-path-node-24750  even "><a href="/schedule/broadcast" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Broadcast Schedule&#039;,&#039;schedule/broadcast&#039;);">Broadcast Schedule</a><div class="dropdown no_advertisement"></div></li>
+<li class="menu-1865 menu-path-mlssoccercom-schedule  odd last"><a href="http://www.mlssoccer.com/schedule" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;MLS Schedule&#039;,&#039;http://www.mlssoccer.com/schedule&#039;);">MLS Schedule</a><div class="dropdown no_advertisement"></div></li>
+</ul>
+
+  </div><!-- /.block -->
+  </div><!-- /.region -->
+      </div>
+
+      <div id="content" class="content section-post-two-column" role="main">
+
+        <div id="center_content">
+
+          <a id="main-content"></a>
+
+          <div class="ct_wrapper">
+                                                <div class="title-image-header-region">
+                          </div>
+                                      <h1 class="title" id="page-title">Schedule</h1>
+                        
+                        
+                                                                                                                        
+              <div class="region region-content-top clearfix">
+      <div id="block-block-10" class="block block-block first last odd">
+
+            
+    <p><button style='display:none' class='ecalApi btn prime subscribe' data-toggle='modal' data-id='54e14982fb06153f53000002'>Sync To Calendar</button></p>
+<script id="eCal" type="text/javascript">
+
+    var _eCal = _eCal || [],
+        eCalCdnUrl    = '//button.ecal.com/',
+        eCalapiKey    = '7d7f546f53f83495252295e009952469d74ecc22';
+         eCalShareOptions = ['facebook', 'twitter']; 
+
+    (function () {
+        var ecalWidgetJS = document.createElement('script');
+        ecalWidgetJS.src = eCalCdnUrl + 'js/eCal.js?_=' + new Date().getTime();
+        document.getElementsByTagName('head')[0].appendChild(ecalWidgetJS)
+    })();
+
+</script>
+  </div><!-- /.block -->
+  </div><!-- /.region -->
+            
+
+
+<form class="select_container" action="/schedule" method="get" id="mp7-schedule-hub-search-filters-form" accept-charset="UTF-8"><div><div class="form-item form-type-select form-item-month">
+ <select id="edit-month" name="month" class="form-select"><option value="all" selected="selected">All Months</option><option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select>
+</div>
+<div class="form-item form-type-select form-item-year">
+ <select id="edit-year" name="year" class="form-select"><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019" selected="selected">2019</option></select>
+</div>
+<div class="form-item form-type-select form-item-club-options">
+ <select id="edit-club-options" name="club_options" class="form-select"><option value="Filters">All Competitions:</option><option value="Home">Home</option><option value="Away">Away</option><option value="15">MLS Regular Season</option><option value="14">MLS Playoffs</option><option value="13">MLS Cup</option><option value="22">World Football Challenge </option><option value="16">Open Cup</option><option value="12">International Friendly</option><option value="17">Preseason</option><option value="10">CONCACAF Champions League</option><option value="24">US Open Cup</option><option value="23">Concacaf Champions League</option><option value="21">Friendly</option></select>
+</div>
+<input type="submit" id="edit-submit" name="op" value="Update" class="form-submit" /><input class="reset_button form-submit" type="submit" id="edit-cancel" name="op" value="Reset" /><input type="hidden" name="form_build_id" value="form-jGKC57DWIpObxVdur6gwBFGBK8w6W9NrIfJw8FYr-3U" />
+<input type="hidden" name="form_id" value="mp7_schedule_hub_search_filters_form" />
+</div></form><div class="item-list"><ul class="schedule_list list-reset"><li class="first"><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/atl.png?k.1xwZkSeYnokdMHeHE.P0srt1M.7033&amp;itok=WCpoxCM1" width="50" height="50" alt="Atlanta United FC" title="Atlanta United FC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, March 3, 2019 <span class="match_time">6:00PM ET</span>
+</div>
+        <div class="match_matchup">ATLANTA UNITED FC</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/15005629D3D54464?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/New_York_City_FC200x200.png?4YTx.EO8fKltO0Zczt.nRjuWw.GTpK5p&amp;itok=mexjARZZ" width="50" height="50" alt="New York City FC" title="New York City FC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, March 10, 2019 <span class="match_time">3:00PM ET</span>
+</div>
+        <div class="match_matchup">at NEW YORK CITY FC</div>
+        <div class="match_info match_location_short">YANKEE STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/saltlake_150.png?lElWdlPLF_WyovIptt38CxS6wge4g7EJ&amp;itok=tnzPVbYH" width="50" height="50" alt="Real Salt Lake" title="Real Salt Lake" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, March 16, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">REAL SALT LAKE</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF1946A94?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/OrlandocityFC_200x200.png?tno4cXypYi18k9NRhPtWzu30iFWvPnTY&amp;itok=VrtT9LdH" width="50" height="50" alt="Orlando City SC" title="Orlando City SC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, March 31, 2019 <span class="match_time">6:30PM ET</span>
+</div>
+        <div class="match_matchup">at ORLANDO CITY SC</div>
+        <div class="match_info match_location_short">ORLANDO CITY STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/lafc-200x200_4.png?3e5468f8hnhXIZlCdMbqBIJN7dAybSvK&amp;itok=RMgWrfgr" width="50" height="50" alt="Los Angeles Football Club" title="Los Angeles Football Club" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, April 6, 2019 <span class="match_time">3:00PM ET</span>
+</div>
+        <div class="match_matchup">LOS ANGELES FOOTBALL CLUB</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF2216B05?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/montrealimapact_logo.png?QJVKIj_Quy9__NYejn_r02Ma1xjtAsK6&amp;itok=sIkBP9WB" width="50" height="50" alt="Montreal Impact" title="Montreal Impact" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Tuesday, April 9, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">MONTREAL IMPACT</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF3FB6FEF?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/colorado_150.png?tYMJYrVL3MIgpA3D42XRE_D515V84AJd&amp;itok=T6N49uaV" width="50" height="50" alt="Colorado Rapids" title="Colorado Rapids" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, April 13, 2019 <span class="match_time">9:00PM ET</span>
+</div>
+        <div class="match_matchup">at COLORADO RAPIDS</div>
+        <div class="match_info match_location_short">DICK'S SPORTING GOODS PARK</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/New_York_City_FC200x200.png?4YTx.EO8fKltO0Zczt.nRjuWw.GTpK5p&amp;itok=mexjARZZ" width="50" height="50" alt="New York City FC" title="New York City FC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, April 21, 2019 <span class="match_time">4:00PM ET</span>
+</div>
+        <div class="match_matchup">NEW YORK CITY FC</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF43C700F?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/ccsc_primary.png?Bw9_RbRTtntPiBD2UbOrunFm2XejAkOS&amp;itok=xjbMpomh" width="50" height="50" alt="Columbus Crew" title="Columbus Crew" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Wednesday, April 24, 2019 <span class="match_time">7:30PM ET</span>
+</div>
+        <div class="match_matchup">at COLUMBUS CREW</div>
+        <div class="match_info match_location_short">MAPFRE STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/6977-200x200-1.png?8MiAitAT1zCZgrnye5ivPIE4recEoqme&amp;itok=MEKYypx5" width="50" height="50" alt="Minnesota United FC" title="Minnesota United FC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, April 28, 2019 <span class="match_time">1:30PM ET</span>
+</div>
+        <div class="match_matchup">at MINNESOTA UNITED FC</div>
+        <div class="match_info match_location_short">ALLIANZ FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/ccsc_primary.png?Bw9_RbRTtntPiBD2UbOrunFm2XejAkOS&amp;itok=xjbMpomh" width="50" height="50" alt="Columbus Crew" title="Columbus Crew" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, May 4, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">COLUMBUS CREW</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF46E7034?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/sportingkc_logo.png?1nIt1m9685ud9.UeaNewHQkrAyDX0S6m&amp;itok=WRgKmZ2o" width="50" height="50" alt="Sporting Kansas City" title="Sporting Kansas City" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, May 12, 2019 <span class="match_time">7:00PM ET</span>
+</div>
+        <div class="match_matchup">SPORTING KANSAS CITY</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF4E7704F?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/toronto_150.png?ctdpmIDa33mos86UiRb4qrlDcq_kIzaA&amp;itok=v2ZKg5VA" width="50" height="50" alt="Toronto FC" title="Toronto FC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Wednesday, May 15, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">at TORONTO FC</div>
+        <div class="match_info match_location_short">BMO FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/houston_150.png?Qaf.GMK3hz6TmXk2oS6jp.tEzBJ2rAdZ&amp;itok=Q9npcevp" width="50" height="50" alt="Houston Dynamo" title="Houston Dynamo" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, May 18, 2019 <span class="match_time">8:30PM ET</span>
+</div>
+        <div class="match_matchup">at HOUSTON DYNAMO</div>
+        <div class="match_info match_location_short">BBVA COMPASS STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/newengland_150.png?Oin6wO5YD9PmPMw0onyCTsKDZULphWtv&amp;itok=yW_zF2oA" width="50" height="50" alt="New England Revolution" title="New England Revolution" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, May 25, 2019 <span class="match_time">7:30PM ET</span>
+</div>
+        <div class="match_matchup">at NEW ENGLAND REVOLUTION</div>
+        <div class="match_info match_location_short">GILLETTE STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/chicago_150.png?sVM9pdfxJx.0fvktLA8EGaRsxISrBQ7E&amp;itok=EV-Ec0Fb" width="50" height="50" alt="Chicago Fire" title="Chicago Fire" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Wednesday, May 29, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">CHICAGO FIRE</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF514705E?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/Quakes-01logo.png?WHznZIM3ypMT3n1TFYTPB3Wc0lGF_Zqt&amp;itok=MKwGStkd" width="50" height="50" alt="San Jose Earthquakes" title="San Jose Earthquakes" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, June 1, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">SAN JOSE EARTHQUAKES</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF5507069?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/OrlandocityFC_200x200.png?tno4cXypYi18k9NRhPtWzu30iFWvPnTY&amp;itok=VrtT9LdH" width="50" height="50" alt="Orlando City SC" title="Orlando City SC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Wednesday, June 26, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">ORLANDO CITY SC</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF5897075?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/toronto_150.png?ctdpmIDa33mos86UiRb4qrlDcq_kIzaA&amp;itok=v2ZKg5VA" width="50" height="50" alt="Toronto FC" title="Toronto FC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, June 29, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">TORONTO FC</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF64D7092?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/dallas_150.png?yKNOh6MY1s1L_xv3zQsptp7i.Iewqfyt&amp;itok=P3Mj6qhZ" width="50" height="50" alt="FC Dallas" title="FC Dallas" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Thursday, July 4, 2019 <span class="match_time">9:00PM ET</span>
+</div>
+        <div class="match_matchup">at FC DALLAS</div>
+        <div class="match_info match_location_short">TOYOTA STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/newengland_150.png?Oin6wO5YD9PmPMw0onyCTsKDZULphWtv&amp;itok=yW_zF2oA" width="50" height="50" alt="New England Revolution" title="New England Revolution" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Friday, July 12, 2019 <span class="match_time">7:00PM ET</span>
+</div>
+        <div class="match_matchup">NEW ENGLAND REVOLUTION</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF6827099?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/CIN_Primary.png?3vFK4RLNe9RHJarGOrrOAWwUj.56Rf2w&amp;itok=KDi_jEgl" width="50" height="50" alt="FC Cincinnati" title="FC Cincinnati" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Thursday, July 18, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">at FC CINCINNATI</div>
+        <div class="match_info match_location_short">NIPPERT STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/atl.png?k.1xwZkSeYnokdMHeHE.P0srt1M.7033&amp;itok=WCpoxCM1" width="50" height="50" alt="Atlanta United FC" title="Atlanta United FC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, July 21, 2019 <span class="match_time">4:00PM ET</span>
+</div>
+        <div class="match_matchup">at ATLANTA UNITED FC</div>
+        <div class="match_info match_location_short">MERCEDES-BENZ STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/chicago_150.png?sVM9pdfxJx.0fvktLA8EGaRsxISrBQ7E&amp;itok=EV-Ec0Fb" width="50" height="50" alt="Chicago Fire" title="Chicago Fire" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, July 27, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">at CHICAGO FIRE</div>
+        <div class="match_info match_location_short">SEATGEEK STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/PHI-300x300.png?.MFIP2YaXPO5gsvIk8AtxfwHpPZV1Ezz&amp;itok=LzlC182w" width="50" height="50" alt="Philadelphia Union" title="Philadelphia Union" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, August 4, 2019 <span class="match_time">7:30PM ET</span>
+</div>
+        <div class="match_matchup">PHILADELPHIA UNION</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF6C170A9?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/losangeles_150.png?CcFWHskUeCT_9ACLvj6E51.0P0O49H4s&amp;itok=-D3yV5EM" width="50" height="50" alt="LA Galaxy" title="LA Galaxy" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, August 11, 2019 <span class="match_time">7:30PM ET</span>
+</div>
+        <div class="match_matchup">LA GALAXY</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF6F670B3?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/vancouver_150_1.png?QHCrZhxv.ZziAxt3z4dUvuU_RII8yqWf&amp;itok=n6-Q4SUj" width="50" height="50" alt="Vancouver Whitecaps FC" title="Vancouver Whitecaps FC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, August 17, 2019 <span class="match_time">10:00PM ET</span>
+</div>
+        <div class="match_matchup">at VANCOUVER WHITECAPS FC</div>
+        <div class="match_info match_location_short">BC PLACE</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/newyork_150.png?xtvYfYpAtsy61nQrwx4oG_djpl_skGbC&amp;itok=EgeS0Q59" width="50" height="50" alt="New York Red Bulls" title="New York Red Bulls" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Wednesday, August 21, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">NEW YORK RED BULLS</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF72070BA?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/PHI-300x300.png?.MFIP2YaXPO5gsvIk8AtxfwHpPZV1Ezz&amp;itok=LzlC182w" width="50" height="50" alt="Philadelphia Union" title="Philadelphia Union" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, August 24, 2019 <span class="match_time">7:30PM ET</span>
+</div>
+        <div class="match_matchup">at PHILADELPHIA UNION</div>
+        <div class="match_info match_location_short">TALEN ENERGY STADIUM</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/montrealimapact_logo.png?QJVKIj_Quy9__NYejn_r02Ma1xjtAsK6&amp;itok=sIkBP9WB" width="50" height="50" alt="Montreal Impact" title="Montreal Impact" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Saturday, August 31, 2019 <span class="match_time">7:30PM ET</span>
+</div>
+        <div class="match_matchup">at MONTREAL IMPACT</div>
+        <div class="match_info match_location_short">STADE SAPUTO</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/1581_200x200-0.png?baugeUIHEhaU191v_vQga4GYfquWW2ET&amp;itok=spMLic4A" width="50" height="50" alt="Portland Timbers" title="Portland Timbers" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, September 15, 2019 <span class="match_time">7:30PM ET</span>
+</div>
+        <div class="match_matchup">at PORTLAND TIMBERS</div>
+        <div class="match_info match_location_short">PROVIDENCE PARK</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/seattle_150.png?RWvpzpK4t3GaZYv.FIGRLDjMktWSSacw&amp;itok=NuRwhqex" width="50" height="50" alt="Seattle Sounders FC" title="Seattle Sounders FC" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, September 22, 2019 <span class="match_time">8:00PM ET</span>
+</div>
+        <div class="match_matchup">SEATTLE SOUNDERS FC</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF74C70E9?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+<li><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_away"></div>
+      <span class="match_home_away">A</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/mp6/newyork_150.png?xtvYfYpAtsy61nQrwx4oG_djpl_skGbC&amp;itok=EgeS0Q59" width="50" height="50" alt="New York Red Bulls" title="New York Red Bulls" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, September 29, 2019 <span class="match_time">5:00PM ET</span>
+</div>
+        <div class="match_matchup">at NEW YORK RED BULLS</div>
+        <div class="match_info match_location_short">RED BULL ARENA (USA)</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+          </div>
+
+    <div class="">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+          </div>
+  </article>
+</li>
+</li>
+<li class="last"><li class="row row_no_padding">
+  <article class="match_item">
+    <div class="match_click_area">
+      <div class="match_triangle match_home"></div>
+      <span class="match_home_away">H</span>
+      <div class="vs_club">
+        <img class="club_logo" src="https://dc-mp7static.mlsdigital.net/styles/image_small_thumbnail/s3/CIN_Primary.png?3vFK4RLNe9RHJarGOrrOAWwUj.56Rf2w&amp;itok=KDi_jEgl" width="50" height="50" alt="FC Cincinnati" title="FC Cincinnati" />      </div>
+          <div class="match_meta">
+        <div class="match_date">Sunday, October 6, 2019 <span class="match_time">4:00PM ET</span>
+</div>
+        <div class="match_matchup">FC CINCINNATI</div>
+        <div class="match_info match_location_short">AUDI FIELD</div>
+            </div>
+      <span class="match_competition ">MLS</span>
+      <a class="expander" href="#">
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="match_links not-league"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.ticketmaster.com/event/1500563CF77D70FE?brand=dcunited&amp;artistid=806390&amp;landing=s&amp;CFC_DC_UNITED_2B" class="button match-link-1">Tickets</a></div></div></div></div>    </div>
+
+    <div class="match_extra collapsed">
+      <hr>
+      <div class="match_summary match_item">
+              </div>
+      <div class="match_links single_link"><div class="field field-name-field-match-links field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item odd"></div></div></div></div>    </div>
+  </article>
+</li>
+</li>
+</ul></div><!-- block__no_wrapper -->
+<!-- region__no_wrapper -->
+                      </div>
+
+          <div id="side-1">
+              <section class="region region-sidebar-first column sidebar">
+      <div id="block-dfp-right1" class="block block-dfp first odd">
+
+            
+    <div id="dfp-ad-right1-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-right1" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-right1");
+    });
+  </script>
+</div>
+</div>
+  </div><!-- /.block -->
+  <div id="block-block-14" class="block block-block even">
+
+            
+    <div><a href="https://www.mlssoccer.com/mobile?utm_source=300x50-dc&utm_campaign=app&utm_medium=web" target="_blank"><img src="https://dc-mp7static.mlsdigital.net/images/MLS_App_DC_300x50_Banner_Static_Club.jpg?qCwNlecltvGT3YjfMfznNp7o5XpCqNCY" alt="MLS Mobile App" width="100%" /></a></div>
+  </div><!-- /.block -->
+  <div id="block-bean-latest-posts-right-rail-short" class="block block-bean odd">
+
+                      <h2 class="block-title">Latest News &amp; Media</h2>
+              
+    <div class="posts-bean bean_includes_title  clearfix">
+
+  <div class="content">
+    <div class="item-list"><ul class="item-list list-reset"><li class="posts-bean-news-item first" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Latest Posts - Right Rail (Short)&#039;,&#039;Position-0&#039;,&#039;&#039;)"><article class="node-29937 node node-post node-promoted node-teaser row">
+  <div class="row_image image-teaser"><div class="field field-name-field-post-primary-image field-type-node-reference field-label-hidden"><div class="field-items"><div class="field-item even"><article class="node-29936 node node-image node-promoted node-teaser">
+
+<div class="field field-name-field-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://dc-mp7static.mlsdigital.net/styles/image_thumbnail/s3/images/McCann1920x1080.jpg?rbCAdhCFkitDlm_dEoZIfdtJ9Fd6zaVS&amp;itok=i5qcpFxo&amp;c=58cce53f89f283f5b1680464bcb7b97a" width="168" height="95" alt="Image: Chris Mccann" /></div></div></div></article><!-- /.node -->
+</div></div></div><a href="/post/2019/02/12/dc-united-acquire-veteran-midfielderdefender-chris-mccann"></a></div><div class="row_text"><div class="node-title"><a href="/post/2019/02/12/dc-united-acquire-veteran-midfielderdefender-chris-mccann">D.C. United acquire veteran midfielder/defender Chris McCann</a></div><div class="timestamp">February 12, 2019</div></div></article>
+</li>
+<li class="posts-bean-news-item" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Latest Posts - Right Rail (Short)&#039;,&#039;Position-1&#039;,&#039;&#039;)"><article class="node-29928 node node-post node-promoted node-teaser row">
+  <div class="row_image image-teaser"><div class="field field-name-field-post-primary-image field-type-node-reference field-label-hidden"><div class="field-items"><div class="field-item even"><article class="node-29927 node node-image node-promoted node-teaser">
+
+<div class="field field-name-field-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://dc-mp7static.mlsdigital.net/styles/image_thumbnail/s3/images/USATSI_12124450.jpg?shZhtJrFpcKrT8Rwwd.Ol.EQWJWbDusS&amp;itok=cWF0Ja_6&amp;c=26b6407ff7d4447728cd999cc21feceb" width="168" height="95" alt="Team after FCC preseason match" /></div></div></div></article><!-- /.node -->
+</div></div></div><a href="/post/2019/02/07/recap-dc-united-draw-1-1-fc-cincinnati"></a></div><div class="row_text"><div class="node-title"><a href="/post/2019/02/07/recap-dc-united-draw-1-1-fc-cincinnati">RECAP | D.C. United draw 1-1 with FC Cincinnati</a></div><div class="timestamp">February 7, 2019</div></div></article>
+</li>
+<li class="posts-bean-news-item" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Latest Posts - Right Rail (Short)&#039;,&#039;Position-2&#039;,&#039;&#039;)"><article class="node-29924 node node-post node-promoted node-teaser row">
+  <div class="row_image image-teaser"><div class="field field-name-field-post-primary-image field-type-node-reference field-label-hidden"><div class="field-items"><div class="field-item even"><article class="node-29925 node node-image node-promoted node-teaser">
+
+<div class="field field-name-field-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://dc-mp7static.mlsdigital.net/styles/image_thumbnail/s3/images/WardAkeem_02.02.2019_Preseason_DD_33.JPG?9Zx3wfuZ0w9nooTQvGbX.SO8sonE1bq8&amp;itok=yckd80gF&amp;c=bbb5e388dfea5719ab22dbbb1739bc57" width="168" height="95" alt="Akeem Ward vs. BFC" /></div></div></div></article><!-- /.node -->
+</div></div></div><a href="/post/2019/02/05/preview-dc-united-vs-fc-cincinnati"></a></div><div class="row_text"><div class="node-title"><a href="/post/2019/02/05/preview-dc-united-vs-fc-cincinnati">Preview | D.C. United vs. FC Cincinnati </a></div><div class="timestamp">February 5, 2019</div></div></article>
+</li>
+<li class="posts-bean-news-item" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Latest Posts - Right Rail (Short)&#039;,&#039;Position-3&#039;,&#039;&#039;)"><article class="node-29919 node node-post node-promoted node-teaser row">
+  <div class="row_image image-teaser"><div class="field field-name-field-post-primary-image field-type-node-reference field-label-hidden"><div class="field-items"><div class="field-item even"><article class="node-29918 node node-image node-promoted node-teaser">
+
+<div class="field field-name-field-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://dc-mp7static.mlsdigital.net/styles/image_thumbnail/s3/images/01.24.2019_Preseason_XD_09__DSC0060.jpg?.gOgzUyB_mTAquCzYYFcdya7NBZUbr_l&amp;itok=wlW16LRZ&amp;c=d19b761d4f45dd4fecd51a5b0cf8891a" width="168" height="95" alt="IMAGE: PRESEASON ST JAMES HUDDLE" /></div></div></div></article><!-- /.node -->
+</div></div></div><a href="/post/2019/02/05/2019-preseason-week-1-2-photo-recap"></a></div><div class="row_text"><div class="node-title"><a href="/post/2019/02/05/2019-preseason-week-1-2-photo-recap">2019 Preseason Week 1 &amp; 2 Photo Recap</a></div><div class="timestamp">February 5, 2019</div></div></article>
+</li>
+<li class="posts-bean-news-item last" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Latest Posts - Right Rail (Short)&#039;,&#039;Position-4&#039;,&#039;&#039;)"><article class="node-29914 node node-post node-promoted node-teaser row">
+  <div class="row_image image-teaser"><div class="field field-name-field-post-primary-image field-type-node-reference field-label-hidden"><div class="field-items"><div class="field-item even"><article class="node-29913 node node-image node-promoted node-teaser">
+
+<div class="field field-name-field-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://dc-mp7static.mlsdigital.net/styles/image_thumbnail/s3/images/Ulises Segura v Steel (2).jpeg?Zmyqy_O1kwzT4AyaVUsWwX3eE65ardYY&amp;itok=xKxZFbkt&amp;c=ba448d1d6bea14b8295541bf62d29656" width="168" height="95" alt="IMAGE: Segura v Steel " /></div></div></div></article><!-- /.node -->
+</div></div></div><a href="/post/2019/02/02/dc-united-beat-bethlehem-steel-fc-1-0-preseason-action"></a></div><div class="row_text"><div class="node-title"><a href="/post/2019/02/02/dc-united-beat-bethlehem-steel-fc-1-0-preseason-action">D.C. United beat Bethlehem Steel FC 1-0 in preseason action</a></div><div class="timestamp">February 2, 2019</div></div></article>
+</li>
+</ul></div><a href="/news" class="post_bean_link">Read More</a>  </div>
+</div>
+
+  </div><!-- /.block -->
+  <div id="block-dfp-right2" class="block block-dfp last even">
+
+            
+    <div id="dfp-ad-right2-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-right2" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-right2");
+    });
+  </script>
+</div>
+</div>
+  </div><!-- /.block -->
+  </section><!-- region__sidebar -->
+          </div>
+
+          <div id="post-bottom">
+            <div id="comments">
+                          </div>
+          </div>
+
+          <div id="page-callouts">
+                      </div>
+
+        </div>
+
+
+      </div><!-- /#content -->
+    </div><!-- /#main -->
+
+    <div id="ad-region4">
+        <div class="region region-ad-fourth">
+      <div id="block-block-18" class="block block-block first odd">
+
+            
+    <div class="email-sign-up">
+<div class="email-title">Be the first to hear the latest Black-and-Red news</div>
+<div class="email-subtitle">Subscribe to the D.C. United newsletter to receive the inside scoop on club updates and special fan offers</div>
+<iframe frameborder="0" height="60" src="https://pub.s1.exacttarget.com/afuaoofbbro" style="padding-left:20px;" width="380px"></iframe>
+
+<div class="email-policy">I hereby consent to receive additional information from Major League Soccer, its Clubs, Soccer United Marketing and its marketing partners in accordance with our <a href="https://www.mlssoccer.com/privacy-policy" style="color:#000000;text-decoration:underline;" target="_blank">Privacy Policy</a> and <a href="https://www.mlssoccer.com/terms-service" style="color:#000000;text-decoration:underline;" target="_blank">Terms of Service</a>.</div>
+</div>
+<style type="text/css">.email-sign-up {width:100%;text-align:center;}
+.email-title {font-size:14pt;font-weight:bold;text-align:center;color:#000000;}
+.email-subtitle {padding-top:5px;font-size:10pt;text-align:center;color:#000000;}
+.email-policy {font-size:8pt;text-align:center;color:#000000;padding-bottom:20px;}
+</style>
+
+  </div><!-- /.block -->
+  <div id="block-dfp-leaderboard-footer" class="block block-dfp last even">
+
+            
+    <div id="dfp-ad-leaderboard_footer-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-leaderboard_footer" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-leaderboard_footer");
+    });
+  </script>
+</div>
+</div>
+  </div><!-- /.block -->
+  </div><!-- /.region -->
+    </div>
+
+  </div><!-- /#page -->
+
+  <div id="footer-wrapper">
+      <footer id="footer" class="region region-footer">
+      <div id="block-block-6" class="block block-block first odd">
+
+            
+    <div><!-- Start Quantcast Tag -->
+<script type="text/javascript"> 
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push(
+{qacct:"p-ttp5n0Y9Xx0Uv",labels:"_fp.event.DC United Schedule Page"}
+);
+</script>
+<noscript>
+<img src="//pixel.quantserve.com/pixel/p-ttp5n0Y9Xx0Uv.gif?labels=_fp.event.DC+United+Schedule+Page" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag --></div>
+  </div><!-- /.block -->
+  <div id="block-views-partners-block" class="block block-views block even">
+
+              <h2 class="block-title">Partners</h2>
+        
+    
+<div class="view view-partners view-id-partners view-display-id-block view-dom-id-ac0ee13747775d27855d57175d60e3f2 partner-count-5">
+      <div class="view-content">
+              <div class="first_half_bean">
+            <div class="views-row views-row-1 views-row-odd views-row-first">  <div class="views-field views-field-field-advertisement-bean-image">        <div class="field-content"><a href="http://bit.ly/1iB7QgE"><img src="https://dc-mp7static.mlsdigital.net/advocare in white_100x60_v2-01.png?YDKuw.plcv2DVftsPW2pGhquL7pRFMEv" width="100" height="60" alt="" /></a></div>  </div>  </div>  <div class="views-row views-row-2 views-row-even">  <div class="views-field views-field-field-advertisement-bean-image">        <div class="field-content"><a href="https://www.ticketmaster.com/artist/806390?tm_link=tm_homeA_header_search"><img src="https://dc-mp7static.mlsdigital.net/TM-BlueLogo copy_0.png?H6H9hlK0vapgOcacgPFMoaiYn8fDobTD" width="100" height="13" alt="" /></a></div>  </div>  </div>  <div class="views-row views-row-3 views-row-odd">  <div class="views-field views-field-field-advertisement-bean-image">        <div class="field-content"><a href="http://bit.ly/1H4eeZf"><img src="https://dc-mp7static.mlsdigital.net/heineken in white_100x60_v2-04.png?CoOc0tU59I3pX.FUGvFppy_b4fg15nI1" width="101" height="61" alt="" /></a></div>  </div>  </div> 
+        </div> 
+              <div class="first_half_bean">
+            <div class="views-row views-row-4 views-row-even">  <div class="views-field views-field-field-advertisement-bean-image">        <div class="field-content"><a href="http://www.medstarhealth.org/"><img src="https://dc-mp7static.mlsdigital.net/MS_healthfooter logos-02.png?hPmJmkgZHlqDu5rPbRTQAaes8M48lnLw" width="100" height="60" alt="" /></a></div>  </div>  </div>  <div class="views-row views-row-5 views-row-odd views-row-last">  <div class="views-field views-field-field-advertisement-bean-image">        <div class="field-content"><a href="http://www.safeway.com"><img src="https://dc-mp7static.mlsdigital.net/safewy_footer logos-01.png?cRwceerDI8689pY1yfhpcScGityCbIDN" width="100" height="60" alt="" /></a></div>  </div>  </div> 
+        </div> 
+          </div>
+  </div>
+
+  </div><!-- /.block -->
+  <div id="block-menu-footer" class="block block-menu odd" role="navigation">
+
+              <h2 class="block-title">Footer</h2>
+        
+    <ul class="menu"><li class="first expanded"><a href="/" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Customer Service&#039;,&#039;&lt;front&gt;&#039;);">Customer Service</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first last leaf"><a href="https://oss.ticketmaster.com/html/home.htmI?team=dcunited&amp;l=EN&amp;STAGE=1" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Account Manager&#039;,&#039;https://oss.ticketmaster.com/html/home.htmI?team=dcunited&amp;l=EN&amp;STAGE=1&#039;);">Account Manager</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="http://www.audifielddc.com" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Audi Field&#039;,&#039;http://www.audifielddc.com&#039;);">Audi Field</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first last leaf"><a href="https://twitter.com/search?q=%23audifield&amp;src=typd" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;#AudiField&#039;,&#039;https://twitter.com/search?q=%23audifield&amp;src=typd&#039;);">#AudiField</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded active-trail"><a href="/" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;D.C. United&#039;,&#039;&lt;front&gt;&#039;);" class="active-trail">D.C. United</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="/news" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;News&#039;,&#039;news&#039;);">News</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf active-trail"><a href="/schedule" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Schedule&#039;,&#039;schedule&#039;);" class="active-trail active">Schedule</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/stats" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Team Statistics&#039;,&#039;stats&#039;);">Team Statistics</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/players" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Players&#039;,&#039;players&#039;);">Players</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="/club/official-partners" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Official Partners&#039;,&#039;club/official-partners&#039;);">Official Partners</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="/careers" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Job Opportunities&#039;,&#039;careers&#039;);">Job Opportunities</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="/" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Social Media&#039;,&#039;&lt;front&gt;&#039;);">Social Media</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www.facebook.com/dcunited" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Facebook&#039;,&#039;https://www.facebook.com/dcunited&#039;);">Facebook</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://twitter.com/dcunited" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Twitter&#039;,&#039;https://twitter.com/dcunited&#039;);">Twitter</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="https://www.youtube.com/user/dcunited" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;YouTube&#039;,&#039;https://www.youtube.com/user/dcunited&#039;);">YouTube</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="https://instagram.com/dcunited/" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Instagram&#039;,&#039;https://instagram.com/dcunited/&#039;);">Instagram</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="expanded"><a href="http://www.mlsstore.com/DC_United_Gear/source/BM-mlscom-DCUNITED-TopNav-022615" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Store&#039;,&#039;http://www.mlsstore.com/DC_United_Gear/source/BM-mlscom-DCUNITED-TopNav-022615&#039;);">Store</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="http://www.mlsstore.com/DC_United_Jerseys" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Jerseys&#039;,&#039;http://www.mlsstore.com/DC_United_Jerseys&#039;);">Jerseys</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="http://www.mlsstore.com/DC_United_Men" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Men&#039;s&#039;,&#039;http://www.mlsstore.com/DC_United_Men&#039;);">Men&#039;s</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="http://www.mlsstore.com/DC_United_Women" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Women&#039;s&#039;,&#039;http://www.mlsstore.com/DC_United_Women&#039;);">Women&#039;s</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="http://www.mlsstore.com/DC_United_Kids" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Kids&#039;&#039;,&#039;http://www.mlsstore.com/DC_United_Kids&#039;);">Kids&#039;</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlsstore.com/DC_United_Accessories" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Accessories&#039;,&#039;http://www.mlsstore.com/DC_United_Accessories&#039;);">Accessories</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+<li class="last expanded"><a href="http://www.mlssoccer.com" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Major League Soccer&#039;,&#039;http://www.mlssoccer.com&#039;);">Major League Soccer</a><div class="dropdown no_advertisement"><ul class="menu"><li class="first leaf"><a href="https://www.mlssoccer.com/mobile?utm_source=dcunited&amp;utm_medium=club-footer&amp;utm_campaign=app-promo" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;Download the MLS App&#039;,&#039;https://www.mlssoccer.com/mobile?utm_source=dcunited&amp;utm_medium=club-footer&amp;utm_campaign=app-promo&#039;);">Download the MLS App</a><div class="dropdown no_advertisement"></div></li>
+<li class="leaf"><a href="http://www.mlssoccer.com/stats" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;League Leaders&#039;,&#039;http://www.mlssoccer.com/stats&#039;);">League Leaders</a><div class="dropdown no_advertisement"></div></li>
+<li class="last leaf"><a href="http://www.mlssoccer.com/news" target="_blank" onclick="ga(&#039;send&#039;,&#039;event&#039;,&#039;Navigation&#039;,&#039;League News&#039;,&#039;http://www.mlssoccer.com/news&#039;);">League News</a><div class="dropdown no_advertisement"></div></li>
+</ul></div></li>
+</ul>
+  </div><!-- /.block -->
+  <div id="block-block-1" class="block block-block even">
+
+            
+    <div class="footer_message" style="text-align:center;"><span>© 2019 MLS. All Major League Soccer trademarks and copyrights used by permission. All rights reserved. <a href="http://www.mlssoccer.com/privacy-policy" style="color: #999999; text-decoration: underline;" target="_blank">Privacy Policy</a> | <a href="http://www.mlssoccer.com/terms-service" style="color: #999999; text-decoration: underline;" target="_blank">Terms of Service</a> </span> <a href="https://labs.mlssoccer.com/">Powered by MLS Digital</a><br />
+<br />
+<span style="color:#fff">IMPORTANT NOTE: We have updated our Terms of Use. It affects your rights about how to resolve any dispute between you and MLS.<a href="http://www.mlssoccer.com/terms-service" style="color:#fff;text-decoration: underline;" target="_blank">Read here</a>.</span></div>
+
+  </div><!-- /.block -->
+  <div id="block-block-8" class="block block-block last odd">
+
+            
+    <div><script language='JavaScript1.1' src='//pixel.mathtag.com/event/js?mt_id=794830&mt_adid=145014&v1=&v2=&v3=&s1=&s2=&s3='></script></div>
+  </div><!-- /.block -->
+  </footer><!-- region__footer -->
+  </div>
+
+</div><!-- /#bg -->
+
+        <div class="region region-page-bottom">
+    <script type="text/javascript">
+  var _sf_async_config=Drupal.settings.chartbeat;
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+         "static.chartbeat.com/js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script><!-- Begin comScore Tag -->
+          <script>
+            var _comscore = _comscore || [];
+            _comscore.push({"c1":"2","c2":"6036539","c3":"","c4":"https:\/\/www.dcunited.com\/schedule","c5":"","c6":"","c15":"","cs_ucfr":1});
+            (function() {
+              var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+              s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+              el.parentNode.insertBefore(s, el);
+            })();
+          </script>
+          <noscript>
+            <img src="http://b.scorecardresearch.com/p?c1=2&c2=6036539&c3=&c4=https%3A//www.dcunited.com/schedule&c5=&c6=&c15=&cs_ucfr=1&cv=2.0&cj=1" />
+          </noscript>
+      <!-- End comScore Tag -->  </div><!-- /.region -->
+<script src="https://www.dcunited.com/s3fs-js/js/js_45JniWrXrY8q8AEVIV6GFupI5scizolw-FrujytMgiY.js"></script>
+<script src="https://www.dcunited.com/s3fs-js/js/js_o2Dol9qkffgeNFs4RBplivz_OceVs6bU7J8lnrbK3E0.js"></script>
+<script src="https://www.dcunited.com/s3fs-js/js/js_JEEhpWZpbvXWSVB5ekvHsW87sKabFf8u7Xq3qQM-Acg.js"></script>
+  
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2d0bb5d475","applicationID":"9157297,9233334","transactionName":"Yl1SMEtVWkEHUkJZXVsXcQdNXVtcSVxGB21GW1gBXUFYVzlZQ1JtWFlZCg==","queueTime":0,"applicationTime":547,"atts":"ThpRRgNPSU8=","errorBeacon":"bam.nr-data.net","agent":""}</script>  <div class="tracking-pixels"><!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '779914182155603'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=779914182155603&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+<!-- Code for Action: Sitewide - DC United -->
+
+<!-- Begin Sizmek DSP Conversion Action Tracking Code Version 9 -->
+
+<script type='text/javascript'>
+(function() {
+	var w = window, d = document;
+	var s = d.createElement('script');
+	s.setAttribute('async', 'true');
+	s.setAttribute('type', 'text/javascript');
+	s.setAttribute('src', '//c1.rfihub.net/js/tc.min.js');
+	var f = d.getElementsByTagName('script')[0];
+	f.parentNode.insertBefore(s, f);
+	if (typeof w['_rfi'] !== 'function') {
+		w['_rfi']=function() {
+			w['_rfi'].commands = w['_rfi'].commands || [];
+			w['_rfi'].commands.push(arguments);
+		};
+	}
+	_rfi('setArgs', 'ver', '9');
+	_rfi('setArgs', 'rb', '35336');
+	_rfi('setArgs', 'ca', '20808897');
+	_rfi('setArgs', '_o', '35336');
+	_rfi('setArgs', '_t', '20808897');
+	_rfi('track');
+})();
+</script>
+
+<noscript>
+<iframe src='//20808897p.rfihub.com/ca.html?rb=35336&ca=20808897&_o=35336&_t=20808897&ra=REPLACE_ME_WITH_YOUR_CACHE_BUSTING' style='display:none;padding:0;margin:0' width='0' height='0'>
+</iframe>
+</noscript>
+
+<!-- End Sizmek DSP Conversion Action Tracking Code Version 9 --></div>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2d0bb5d475","applicationID":"9157297,9233334","transactionName":"Yl1SMEtVWkEHUkJZXVsXZRZQG11cAlROHkJdSA==","queueTime":0,"applicationTime":0,"atts":"ThpRRgNPSU8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
