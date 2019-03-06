@@ -66,6 +66,27 @@ Here's an excerpt of the results of the final run:
 
 This was tested on both Google Calendar and Apple's MacOS Calendar.
 
+## Instructions for adding to Google Calendar
+
+Here are instructions for installing the calendar in Google Calendar (similar idea for MacOS Calendar):
+
+0. Save lufc-2019.ics to your computer.
+1. On your main Google Calendar page, click on the vertical "..." next to the
+   "Add calendar" text box on the left. Select "Create new calendar".
+2. Set the calendar Name to "Loudoun United FC 2019".
+3. Click the "Create calendar" button.
+4. Click on the arrow in the upper left to leave the Settings page.
+5. Click on the vertical "..." next to your new Loudoun United calendar and select a color. I like "Graphite".
+6. Click the vertical "..." next to the "Add calendar" text box again, but this time select "Import".
+7. Click "Select file from your computer" and browse to the file's location to select it.
+8. Click the "Open" button.
+9. Change the "Add to Calendar" field to be "Loudoun United FC 2019". This
+   will make it easy to delete the calendar later if a new schedule is released.
+10. Click the "Import" button.
+
+Ta-da! You've got a nice, color-coded calendar with all of LUFC's matches
+listed, giving date, time, opponent, and place.
+
 ## Deleting the calendar events
 
 To have the events be removed, add STATUS:CANCELLED to each event, like:
@@ -95,6 +116,5 @@ To have the events be removed, add STATUS:CANCELLED to each event, like:
     ...
     END:VCALENDAR
 ```
-
 
 
