@@ -2,7 +2,7 @@
 
 ## Standard for calendars
 
-The iCalendar standard (RFC-5545, .ics files) discusses the VEVENT field at
+The calendar standard (RFC-5545, .ics files) discusses the VEVENT field at
 https://tools.ietf.org/html/rfc5545#section-3.6.1. Below is a sample calendar
 from section 3.4 of the RFC:
 
