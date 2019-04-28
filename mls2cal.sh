@@ -12,7 +12,7 @@ tmpsched=tmpsched.html
 tmpfiltered=tmpfiltered.txt
 tmpfields=tmpfields.txt
 
-if [ ! -t ]; then     # REMOVE ME!!!
+# if [ ! -t ]; then     # REMOVE ME!!!
 
 echo curl -s -k -o $tmpsched "$site"
 curl -s -k -o $tmpsched "$site"
@@ -25,7 +25,7 @@ cat $tmpfiltered | sed -e 's/<[^>]*>//g' > $tmpfields
 if [ $? -ne 0 ]; then echo sed failed; exit 1; fi
 head -8 $tmpfields
 
-fi     # REMOVE ME!!!
+# fi     # REMOVE ME!!!
 
 #**
 #* Echo the month number for the month name in $1.
